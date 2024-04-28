@@ -1,0 +1,44 @@
+{
+	"current": "currentColor",
+	"gray": {
+		"50": "#F7F7F7",
+		"100": "#F0F0F0",
+		"200": "#E0E0E0",
+		"300": "#D0D0D0",
+		"400": "#B0B0B0",
+		"500": "#909090",
+		"600": "#707070",
+		"700": "#606060",
+		"800": "#505050",
+		"900": "#404040",
+		"DEFAULT": "#D0D0D0"
+	},
+	"info": {
+		"DEFAULT": "#43C6F5"
+	},
+	"error": {
+		"DEFAULT": "#E01032"
+	},
+	"warning": {
+		"DEFAULT": "#FCBA3"
+	},
+	"success": {
+		"DEFAULT": "#1BE309"
+	},
+	"tertiary": {
+		"DEFAULT": "#FFD700",
+		"dark": "#211D03"
+	},
+	"secondary": {
+		"DEFAULT": "#008f8f",
+		"dark": "#041F1F",
+		"light": "#00CCCC"
+	},
+	"primary": {
+		"DEFAULT": "#DC143C",
+		"dark": "#33050e"
+	},
+	"white": "#F1F1F1",
+	"black": "#101010",
+	"dark": "#282629"
+}

@@ -1,0 +1,72 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "books": "Books",
+    "contact": "Contact",
+    "music": "Music",
+    "prints": "Prints",
+    "wallpapers": "Wallpapers",
+    "buy_now": "Buy Now",
+    "download": "Download"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\""
+  },
+  "about": {
+    "title": "About Us",
+    "description": [
+      "Welcome to Seishin Dreams – where creativity knows no bounds! 🎨 ✨ We're a passionate team dedicated to bringing imagination to life. From enchanting tales and vibrant coloring books to mesmerizing music and stunning print designs, our creations are born from a place of endless inspiration.",
+      "At Seishin Dreams, we believe in the power of creativity to spark joy and ignite imaginations. Every project we undertake is fueled by our commitment to crafting immersive experiences that captivate and inspire.",
+      "Join us on this magical journey where stories come alive, colors dance, and dreams find their wings. Explore our world of boundless creativity and let your imagination soar with Seishin Dreams. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "Coloring Books & more!",
+    "description": [
+      "Step into our world of coloring books, the first stroke in our artistic tale. While we fill pages with colors, anticipate exciting stories and diverse reads in the making! Stay tuned for more literary magic soon to unfold!",
+      "Explore our books on:",
+      "Discover Our Book Excerpts & Coloring Samples!"
+    ],
+    "author": "Author Page",
+    "coloring_book_animals": "Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!",
+    "coming_soon": {
+      "title": "Coming Soon: An Amazing Adult Coloring Experience!",
+      "description": "Get ready for our captivating new coloring book designed for adults! Intricate designs and inspiring themes await. Stay tuned for updates on this amazing coloring journey!"
+    },
+    "coloring_book_mindfulness": "Discover serenity in the Enchanted Realms of Mindfulness Coloring Book! Unveil 40 captivating realms and explore beautiful landscapes while absorbing amazing mindfulness tips. Perfect for creative minds seeking tranquility. Dive into enchantment today!"
+  },
+  "prints": {
+    "title": "Clothes & Accesories",
+    "description": [
+      "Discover our exclusive collection of artful designs on t-shirts, stickers, sweatshirts, and more! Each piece showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt.",
+      "Explore our full range on:",
+      "Discover some of our featured products!"
+    ]
+  },
+  "wallpapers": {
+    "title": "Desktop & Mobile Wallpapers",
+    "description": [
+      "✨ Step into our realm of enchantment with our magical world wallpapers. 🏞️ Immerse yourself in captivating landscapes, 🐉 mystical creatures, and fantastical realms. Find the perfect backdrop to add a touch of magic to your screens. 🌌",
+      "Download our wallpapers on:",
+      "Explore some of our mesmerizing enchanting wallpapers!"
+    ]
+  },
+  "music": {
+    "title": "Relaxation Music",
+    "description": [
+      "Step into a realm of serene rhythms and melodies – our curated collection is designed to transport you to a state of tranquility.",
+      "Explore our soothing sounds on:",
+      "Indulge in our meticulously crafted playlist, ideal for unwinding after a long day or finding focus amidst the chaos. Let the music be your guide to relaxation and rejuvenation.",
+      "Dive into our captivating animated video selection!"
+    ]
+  },
+  "contact": {
+    "title": "Realm of Encounters",
+    "description": [
+      "Hey there! Questions, ideas, or just wanna chat? Ping us at:",
+      "For a faster ride or more fun, join our social squad!"
+    ]
+  }
+}

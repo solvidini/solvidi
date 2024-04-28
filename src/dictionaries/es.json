@@ -1,0 +1,72 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "books": "Libros",
+    "contact": "Contacto",
+    "music": "Música",
+    "prints": "Impresiones",
+    "wallpapers": "Fondos de pantalla",
+    "buy_now": "Comprar ahora",
+    "download": "Descargar"
+  },
+  "home": {
+    "welcome": "Bienvenido a",
+    "quote": "\"Los sueños son las semillas del futuro. Cuídalos, cree en ellos y míralos florecer en la realidad.\""
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "description": [
+      "¡Bienvenido a Seishin Dreams, donde la creatividad no conoce límites! 🎨 ✨ Somos un equipo apasionado dedicado a dar vida a la imaginación. Desde cuentos encantadores y libros para colorear vibrantes hasta música hipnotizante y diseños impresos impresionantes, nuestras creaciones nacen de un lugar de infinita inspiración.",
+      "En Seishin Dreams, creemos en el poder de la creatividad para generar alegría y estimular la imaginación. Cada proyecto que emprendemos está impulsado por nuestro compromiso de crear experiencias inmersivas que cautiven e inspiren.",
+      "Únete a nosotros en este viaje mágico donde las historias cobran vida, los colores bailan y los sueños encuentran sus alas. Explora nuestro mundo de creatividad ilimitada y deja que tu imaginación vuele con Seishin Dreams. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "¡Libros para colorear y más!",
+    "description": [
+      "Sumérgete en nuestro mundo de libros para colorear, el primer paso en nuestra historia artística. Mientras llenamos las páginas de colores, ¡espera emocionantes historias y diversas lecturas en proceso! ¡Mantente atento para más magia literaria que pronto se desvelará!",
+      "Explora nuestros libros en:",
+      "Descubre extractos de nuestros libros y muestras de coloreado!"
+    ],
+    "author": "Página del autor",
+    "coloring_book_animals": "Sumérgete en el reino animal con nuestro cautivador Libro para Colorear de Animales para Niños. Presenta 40 criaturas diversas, desde criaturas marinas y animales de granja hasta bestias salvajes y más. Diseños relajantes para aprender y reducir el estrés, estimulando la expresión creativa. Perfecto para mentes curiosas, artistas en ciernes y todas las edades. ¡Explora, aprende y crea hoy!",
+    "coming_soon": {
+      "title": "Próximamente: ¡Una increíble experiencia de coloreado para adultos!",
+      "description": "¡Prepárate para nuestro nuevo libro para colorear diseñado para adultos! Diseños intrincados y temas inspiradores te esperan. ¡Mantente al tanto de este increíble viaje de coloreado!"
+    },
+    "coloring_book_mindfulness": "¡Descubre la serenidad en los Enchanted Realms of Mindfulness Coloring Book! Revela 40 reinos cautivadores y explora paisajes hermosos mientras absorbes increíbles consejos de mindfulness. Perfecto para mentes creativas en busca de tranquilidad. Sumérgete en el encanto hoy!"
+  },
+  "prints": {
+    "title": "Ropa y Accesorios",
+    "description": [
+      "¡Descubre nuestra colección exclusiva de diseños artísticos en camisetas, pegatinas, sudaderas y más! Cada pieza muestra nuestra creatividad y estilo único. Encuentra tu obra de arte para vestir favorita aquí. Redbubble y Spreadshirt.",
+      "Explora nuestra gama completa en:",
+      "Descubre algunos de nuestros productos destacados!"
+    ]
+  },
+  "wallpapers": {
+    "title": "Fondos de pantalla para escritorio y móvil",
+    "description": [
+      "✨ Adéntrate en nuestro reino encantado con nuestros fondos de pantalla mágicos. 🏞️ Sumérgete en paisajes cautivadores, 🐉 criaturas místicas y reinos fantásticos. Encuentra el fondo perfecto para añadir un toque de magia a tus pantallas. 🌌",
+      "Descarga nuestros fondos de pantalla en:",
+      "Explora algunos de nuestros fascinantes fondos de pantalla!"
+    ]
+  },
+  "music": {
+    "title": "Música de relajación",
+    "description": [
+      "Sumérgete en un mundo de ritmos y melodías serenas: nuestra colección seleccionada está diseñada para transportarte a un estado de tranquilidad.",
+      "Explora nuestros sonidos relajantes en:",
+      "Adéntrate en nuestra lista de reproducción meticulosamente creada, ideal para relajarte después de un largo día o encontrar concentración en medio del caos. Deja que la música sea tu guía hacia la relajación y la renovación.",
+      "Sumérgete en nuestra cautivadora selección de videos animados"
+    ]
+  },
+  "contact": {
+    "title": "Mundo de encuentros",
+    "description": [
+      "¡Hola! ¿Preguntas, ideas o simplemente quieres charlar? Contáctanos en:",
+      "Para obtener una respuesta más rápida o más diversión, ¡únete a nuestra comunidad social!"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(./_styles/animations.css);
+@import url(./_styles/components.css);
+
+@layer base {
+	:root {
+		color-scheme: dark;
+	}
+
+	body {
+		@apply text-white;
+		@apply bg-dark;
+	}
+
+	/* Masonry Grid */
+	.masonry-grid {
+		column-count: 2;
+	}
+	@screen md {
+		.masonry-grid {
+			column-count: 3;
+		}
+	}
+	@screen lg {
+		.masonry-grid {
+			column-count: 4;
+		}
+	}
+}

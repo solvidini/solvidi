@@ -1,0 +1,244 @@
+@keyframes rainbowGlow {
+	0% {
+		filter: drop-shadow(0 0 20px #ffd700);
+		transform: scale(1);
+	}
+	16.67% {
+		filter: drop-shadow(0 0 15px #ffd700);
+	}
+	33.33% {
+		filter: drop-shadow(0 0 20px #dc143c);
+	}
+	50% {
+		filter: drop-shadow(0 0 15px #dc143c);
+		transform: scale(1.04);
+	}
+	66.67% {
+		filter: drop-shadow(0 0 20px #009999);
+	}
+	83.33% {
+		filter: drop-shadow(0 0 15px #009999);
+	}
+	100% {
+		filter: drop-shadow(0 0 20px #ffd700);
+		transform: scale(1);
+	}
+}
+
+.animate-svg-rainbow-glow {
+	animation: rainbowGlow 5s ease-in-out infinite;
+}
+
+@keyframes brandGlow {
+	0% {
+		filter: drop-shadow(0 0 20px #009999);
+		transform: scale(1);
+	}
+	25% {
+		filter: drop-shadow(0 0 15px #009999);
+	}
+	50% {
+		filter: drop-shadow(0 0 20px #dc143c);
+		transform: scale(1.04);
+	}
+	75% {
+		filter: drop-shadow(0 0 15px #dc143c);
+	}
+	100% {
+		filter: drop-shadow(0 0 20px #009999);
+		transform: scale(1);
+	}
+}
+
+.animate-svg-brand-glow {
+	animation: brandGlow 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes textGlow {
+	0% {
+		text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
+	}
+	50% {
+		text-shadow: 0 0 10px #fff, 0 0 20px #e6e6e6;
+	}
+	100% {
+		text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
+	}
+}
+
+.animate-text-glow {
+	animation: textGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+	0% {
+		transform: scale(1);
+	}
+	2% {
+		transform: scale(1.002);
+	}
+	4% {
+		transform: scale(1.004);
+	}
+	6% {
+		transform: scale(1.006);
+	}
+	8% {
+		transform: scale(1.008);
+	}
+	10% {
+		transform: scale(1.01);
+	}
+	12% {
+		transform: scale(1.012);
+	}
+	14% {
+		transform: scale(1.014);
+	}
+	16% {
+		transform: scale(1.016);
+	}
+	18% {
+		transform: scale(1.018);
+	}
+	20% {
+		transform: scale(1.02);
+	}
+	22% {
+		transform: scale(1.04);
+	}
+	24% {
+		transform: scale(1.024);
+	}
+	26% {
+		transform: scale(1.026);
+	}
+	28% {
+		transform: scale(1.036);
+	}
+	30% {
+		transform: scale(1.03);
+	}
+	32% {
+		transform: scale(1.032);
+	}
+	34% {
+		transform: scale(1.034);
+	}
+	36% {
+		transform: scale(1.036);
+	}
+	38% {
+		transform: scale(1.038);
+	}
+	40% {
+		transform: scale(1.04);
+	}
+	42% {
+		transform: scale(1.042);
+	}
+	44% {
+		transform: scale(1.044);
+	}
+	46% {
+		transform: scale(1.046);
+	}
+	48% {
+		transform: scale(1.048);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	52% {
+		transform: scale(1.048);
+	}
+	54% {
+		transform: scale(1.046);
+	}
+	56% {
+		transform: scale(1.044);
+	}
+	58% {
+		transform: scale(1.042);
+	}
+	60% {
+		transform: scale(1.04);
+	}
+	62% {
+		transform: scale(1.038);
+	}
+	64% {
+		transform: scale(1.036);
+	}
+	66% {
+		transform: scale(1.034);
+	}
+	68% {
+		transform: scale(1.032);
+	}
+	70% {
+		transform: scale(1.03);
+	}
+	72% {
+		transform: scale(1.04);
+	}
+	74% {
+		transform: scale(1.026);
+	}
+	76% {
+		transform: scale(1.024);
+	}
+	78% {
+		transform: scale(1.03);
+	}
+	80% {
+		transform: scale(1.02);
+	}
+	82% {
+		transform: scale(1.018);
+	}
+	84% {
+		transform: scale(1.016);
+	}
+	86% {
+		transform: scale(1.014);
+	}
+	88% {
+		transform: scale(1.012);
+	}
+	90% {
+		transform: scale(1.01);
+	}
+	92% {
+		transform: scale(1.008);
+	}
+	94% {
+		transform: scale(1.006);
+	}
+	96% {
+		transform: scale(1.004);
+	}
+	98% {
+		transform: scale(1.002);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animate-breathe {
+	animation: breathe 6s ease infinite;
+}
