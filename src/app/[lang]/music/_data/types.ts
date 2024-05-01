@@ -1,4 +1,9 @@
-export interface IVideo {
-	id: string
+export interface ISong {
 	title: string
+	url: string
+}
+
+export interface IPlaylist {
+	title: string
+	url: string
 }

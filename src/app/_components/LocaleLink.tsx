@@ -25,12 +25,12 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 	return (
 		<Link
 			onClick={onClick}
-			className={twMerge("text-xs",
+			className={twMerge("text-sm leading-[1.6rem]",
 				className,
 				pathname === getLocaleUrl(to)
-					? "text-white animate-text-glow"
-					: "text-gray-200",
-				isDrawer && "text-sm"
+					? "text-black font-semibold"
+					: "text-dark",
+				isDrawer && "text-md"
 			)}
 			href={getLocaleUrl(to)}>
 			{children}

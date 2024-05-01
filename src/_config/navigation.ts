@@ -7,10 +7,6 @@ interface INavigation {
 
 export const navigation: INavigation[] = [
 	{
-		title: "home",
-		to: "/",
-	},
-	{
 		title: "about",
 		to: "/about",
 	},
@@ -19,8 +15,12 @@ export const navigation: INavigation[] = [
 		to: "/music",
 	},
 	{
-		title: "projects",
-		to: "/projects",
+		title: "it",
+		to: "/it",
+	},
+	{
+		title: "featured",
+		to: "/featured",
 	},
 	{
 		title: "contact",

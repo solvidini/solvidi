@@ -26,19 +26,20 @@
 		"DEFAULT": "#1BE309"
 	},
 	"tertiary": {
-		"DEFAULT": "#FFD700",
-		"dark": "#211D03"
+		"DEFAULT": "#fad819"
 	},
 	"secondary": {
-		"DEFAULT": "#008f8f",
-		"dark": "#041F1F",
-		"light": "#00CCCC"
+		"DEFAULT": "#4169E1",
+		"dark": "#111a36",
+		"light": "#7d9dff"
 	},
 	"primary": {
 		"DEFAULT": "#DC143C",
-		"dark": "#33050e"
+		"dark": "#360b14",
+		"light": "#ff3860"
 	},
 	"white": "#F1F1F1",
 	"black": "#101010",
-	"dark": "#282629"
+	"dark": "#282629",
+	"light": "#EEEEEE"
 }

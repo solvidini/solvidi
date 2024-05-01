@@ -2,71 +2,54 @@
   "common": {
     "home": "Home",
     "about": "About",
-    "books": "Books",
-    "contact": "Contact",
     "music": "Music",
-    "prints": "Prints",
-    "wallpapers": "Wallpapers",
+    "it": "IT",
+    "featured": "Featured",
+    "contact": "Contact",
     "buy_now": "Buy Now",
-    "download": "Download"
+    "download": "Download",
+    "cookies": "This website embeds external content from platforms like Spotify and SoundCloud, which may use cookies. By using this website, you acknowledge and consent to the use of cookies by these third-party services.",
+    "more": "And more"
   },
   "home": {
-    "welcome": "Welcome to",
+    "welcome": "Welcome to the world of creativity!",
     "quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\""
   },
   "about": {
-    "title": "About Us",
+    "title": "About Me",
     "description": [
-      "Welcome to Seishin Dreams – where creativity knows no bounds! 🎨 ✨ We're a passionate team dedicated to bringing imagination to life. From enchanting tales and vibrant coloring books to mesmerizing music and stunning print designs, our creations are born from a place of endless inspiration.",
-      "At Seishin Dreams, we believe in the power of creativity to spark joy and ignite imaginations. Every project we undertake is fueled by our commitment to crafting immersive experiences that captivate and inspire.",
-      "Join us on this magical journey where stories come alive, colors dance, and dreams find their wings. Explore our world of boundless creativity and let your imagination soar with Seishin Dreams. 🌟 🌌"
-    ]
-  },
-  "books": {
-    "title": "Coloring Books & more!",
-    "description": [
-      "Step into our world of coloring books, the first stroke in our artistic tale. While we fill pages with colors, anticipate exciting stories and diverse reads in the making! Stay tuned for more literary magic soon to unfold!",
-      "Explore our books on:",
-      "Discover Our Book Excerpts & Coloring Samples!"
-    ],
-    "author": "Author Page",
-    "coloring_book_animals": "Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!",
-    "coming_soon": {
-      "title": "Coming Soon: An Amazing Adult Coloring Experience!",
-      "description": "Get ready for our captivating new coloring book designed for adults! Intricate designs and inspiring themes await. Stay tuned for updates on this amazing coloring journey!"
-    },
-    "coloring_book_mindfulness": "Discover serenity in the Enchanted Realms of Mindfulness Coloring Book! Unveil 40 captivating realms and explore beautiful landscapes while absorbing amazing mindfulness tips. Perfect for creative minds seeking tranquility. Dive into enchantment today!"
-  },
-  "prints": {
-    "title": "Clothes & Accesories",
-    "description": [
-      "Discover our exclusive collection of artful designs on t-shirts, stickers, sweatshirts, and more! Each piece showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt.",
-      "Explore our full range on:",
-      "Discover some of our featured products!"
-    ]
-  },
-  "wallpapers": {
-    "title": "Desktop & Mobile Wallpapers",
-    "description": [
-      "✨ Step into our realm of enchantment with our magical world wallpapers. 🏞️ Immerse yourself in captivating landscapes, 🐉 mystical creatures, and fantastical realms. Find the perfect backdrop to add a touch of magic to your screens. 🌌",
-      "Download our wallpapers on:",
-      "Explore some of our mesmerizing enchanting wallpapers!"
+      "I'm Samuel Kędziora, a creative enthusiast with a passion for crafting diverse music, exploring art in its various forms, and venturing into new creative territories. 🎵 From composing soul-stirring melodies to exploring the depths of artistic expression, 🎨 I immerse myself in each endeavor with genuine dedication. Alongside my artistic pursuits, I delve into the world of programming, aiming to fuse technology with creativity to innovate and inspire. 💻 💡 With an unwavering commitment to excellence, I continue to evolve and grow on my creative journey."
     ]
   },
   "music": {
-    "title": "Relaxation Music",
+    "title": "Music",
     "description": [
-      "Step into a realm of serene rhythms and melodies – our curated collection is designed to transport you to a state of tranquility.",
-      "Explore our soothing sounds on:",
-      "Indulge in our meticulously crafted playlist, ideal for unwinding after a long day or finding focus amidst the chaos. Let the music be your guide to relaxation and rejuvenation.",
-      "Dive into our captivating animated video selection!"
+      "🎵 Step into my musical realm, where innovation and diversity shape every sound. 🌟 From experimental twists to alternative vibes, instrumental serenity, rap beats, and the ethereal trance of electronic music, my compositions traverse a vast sonic landscape. 🎶 With each note, my aim is clear: to spread mindfulness and joy through both sound and lyrics, creating an immersive experience that resonates deeply with the soul. 🌿 Join me on this adventurous sonic odyssey. 🎹"
+    ],
+    "latest": "Latest releases",
+    "playlists": "Playlists"
+  },
+  "it": {
+    "title": "IT",
+    "description": [
+      "🚀 As a seasoned Frontend Developer, I possess an unwavering passion for programming and strive to continuously expand my knowledge and skills. I remain deeply engrossed in the latest trends shaping the realm of website, web application, blog, and game development. 💻 My expertise lies in driving seamless user experiences by meticulously addressing UI and UX details, ensuring optimal performance across all devices. 🎨 While specializing in JavaScript and other cutting-edge front-end technologies, I also dedicate myself to honing my proficiency in server technologies. 🔧"
+    ],
+    "skills": {
+      "title": "Technologies I use",
+      "other": "Other"
+    }
+  },
+  "featured": {
+    "title": "Featured",
+    "description": [
+      "🌟 Discover featured projects—a showcase of my creative endeavors and innovative collaborations. Dive in and explore the diverse range of work crafted with passion and dedication."
     ]
   },
   "contact": {
-    "title": "Realm of Encounters",
+    "title": "Contact",
     "description": [
-      "Hey there! Questions, ideas, or just wanna chat? Ping us at:",
-      "For a faster ride or more fun, join our social squad!"
+      "Feel free to reach out to me for collaborations, inquiries, or just to say hello at:",
+      "I'm always excited to connect with fellow creatives and enthusiasts. Let's start a conversation!"
     ]
   }
 }

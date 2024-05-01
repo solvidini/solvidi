@@ -12,23 +12,23 @@ export const DrawerToggler: FC<IDrawerTogglerProps> = ({
 }) => (
 	<button
 		onClick={onClick}
-		className="transition-transform duration-300 ease-in-out md:hidden">
+		className="ml-auto transition-transform duration-300 ease-in-out md:hidden">
 		<div
 			className={twMerge(
-				"w-6 h-0.5 bg-gray-200 transition-all duration-300 transform origin-center",
-				isDrawerOpen && "w-8 rotate-45 bg-white",
+				"w-6 h-0.5 bg-dark transition-all duration-300 transform origin-center",
+				isDrawerOpen && "w-8 rotate-45",
 			)}
 		/>
 		<div
 			className={twMerge(
-				"w-8 h-0.5 bg-gray-200 transition-all duration-300 transform origin-center my-1",
+				"w-8 h-0.5 bg-dark transition-all duration-300 transform origin-center my-1",
 				isDrawerOpen && "opacity-0 my-0",
 			)}
 		/>
 		<div
 			className={twMerge(
-				"w-5 h-0.5 bg-gray-200 transition-all duration-300 transform origin-center my-1 ml-auto",
-				isDrawerOpen && "w-8 -rotate-45 bg-white -my-1",
+				"w-5 h-0.5 bg-dark transition-all duration-300 transform origin-center my-1 ml-auto",
+				isDrawerOpen && "w-8 -rotate-45 -my-1",
 			)}
 		/>
 	</button>

@@ -6,7 +6,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
   const d = await fetchDictionary(lang);
 
   return {
-    title: `Seishin Dreams - ${d.about.title}`,
+    title: `Solvidi - ${d.about.title}`,
     description: d.about.description[0],
   };
 }

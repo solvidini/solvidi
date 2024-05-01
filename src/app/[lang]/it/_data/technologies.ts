@@ -1,0 +1,143 @@
+import { ITechnology, TechnologyType } from "./types"
+
+export const technologies: ITechnology[] = [
+	{
+		id: "react",
+		src: "/technologies/react.png",
+		name: "React",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "js",
+		src: "/technologies/js.png",
+		name: "JavaScript ES5, ES6+",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "ts",
+		src: "/technologies/typescript.png",
+		name: "TypeScript",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "mobx",
+		src: "/technologies/mobx.png",
+		name: "MobX",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "nextjs",
+		src: "/technologies/nextjs.png",
+		name: "Next JS",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "redux",
+		src: "/technologies/redux.png",
+		name: "Redux",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "html",
+		src: "/technologies/html5.png",
+		name: "HTML5",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "css",
+		src: "/technologies/css3.png",
+		name: "CSS3",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "sass",
+		src: "/technologies/sass.png",
+		name: "Sass",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "rtl",
+		src: "/technologies/testing-library.png",
+		name: "Testing Library",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "material-ui",
+		src: "/technologies/material-ui.png",
+		name: "Material UI",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "expressjs",
+		src: "/technologies/expressjs.png",
+		name: "Express JS",
+		className: "p-md",
+		type: TechnologyType.Back,
+	},
+	{
+		id: "rn",
+		src: "/technologies/react-native.png",
+		name: "React Native",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "mysql",
+		src: "/technologies/mysql.png",
+		name: "MySQL",
+		type: TechnologyType.Back,
+	},
+	{
+		id: "i18next",
+		src: "/technologies/i18next.png",
+		name: "i18next",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "tailwind",
+		src: "/technologies/tailwind.png",
+		name: "Tailwind",
+		type: TechnologyType.Front,
+	},
+	{
+		id: "mongodb",
+		src: "/technologies/mongodb.png",
+		name: "MongoDB",
+		type: TechnologyType.Back,
+	},
+	{
+		id: "gql",
+		src: "/technologies/graphql.png",
+		name: "GraphQL",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "git",
+		src: "/technologies/git.png",
+		name: "Git",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "nodejs",
+		src: "/technologies/nodejs.png",
+		name: "Node.js",
+		type: TechnologyType.Back,
+	},
+	{
+		id: "fb",
+		src: "/technologies/firebase.png",
+		name: "Firebase",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "vsc",
+		src: "/technologies/vsc.png",
+		name: "Visual Studio Code",
+		type: TechnologyType.Other,
+	},
+	{
+		id: "ps",
+		src: "/technologies/ps.png",
+		name: "Photoshop",
+		type: TechnologyType.Other,
+	},
+]

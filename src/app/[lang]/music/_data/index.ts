@@ -1,3 +1,4 @@
-import { videos } from "./videos"
+import { playlists } from "./playlists"
+import { songs } from "./songs"
 
-export { videos }
+export { playlists, songs }

@@ -3,7 +3,8 @@ import { FaEnvelope } from "react-icons/fa"
 
 import { socialMedia } from "@/_config"
 import { ExternalLink } from "@/app/_components/ExternalLink"
-import { PageTitle } from "@/app/_components/PageTitle"
+import { Title } from "@/app/_components/Title"
+import { SolvidiSVG } from "@/app/_svg/solvidi"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 
@@ -16,16 +17,16 @@ export default async function Contact({
 
 	return (
 		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in">
-			<PageTitle>{`💌 ${d.contact.title} 💌`}</PageTitle>
+			<Title>{d.contact.title}</Title>
 			<article className="max-w-con-min flex flex-col items-center gap-6 md:gap-8 p-4 pt-2 pb-6 md:p-6 xs:pt-4 mx-auto">
 				<section className="flex flex-col gap-4">
 					<div className="flex flex-wrap justify-center">
 						<p className="text-left mr-2">{d.contact.description[0]}</p>
 						<ExternalLink
 							className="text-tertiary inline-flex items-center"
-							to="mailto:contact@seishindreams.com"
+							to="mailto:contact@solvidi.pro"
 						>
-							<FaEnvelope className="mr-1" /> contact@seishindreams.com
+							<FaEnvelope className="mr-1" /> contact@solvidi.pro
 						</ExternalLink>
 					</div>
 					<p className="text-left xs:text-center">
@@ -34,11 +35,10 @@ export default async function Contact({
 				</section>
 				<section className="flex items-center justify-center space-x-4 text-blue-300">
 					{[
-						socialMedia.facebook,
+						socialMedia.linkedin,
 						socialMedia.instagram,
-						socialMedia.tiktok,
-						socialMedia.pinterest,
-						socialMedia.youtube,
+						socialMedia.spotify,
+						socialMedia.soundcloud,
 					].map((sm) => (
 						<ExternalLink
 							key={sm.title}
@@ -56,14 +56,7 @@ export default async function Contact({
 						</ExternalLink>
 					))}
 				</section>
-				<Image
-					src="/sd.svg"
-					alt="SD"
-					width={300}
-					height={300}
-					className="opacity-10 m-2 w-[240px] md:w-[300px] h-[240px] md:h-[300px]"
-					priority
-				/>
+				<SolvidiSVG className="fade-in fill-light w-[300px] ml-sm" />
 			</article>
 		</main>
 	)

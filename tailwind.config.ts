@@ -32,17 +32,22 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+			dropShadow: {
+				element: "0 4px 3px rgba(0,0,0,.3)",
+			},
 			boxShadow: {
 				outer: "0 0 6px rgba(0,0,0,.6)",
 				inner: "inset 0 0 8px rgba(0,0,0,.6)",
 			},
 			spacing: {
 				em: "1em",
-				xs: "4px",
-				sm: "8px",
-				md: "12px",
-				lg: "18px",
-				xl: "24px",
+				xxs: "4px",
+				xs: "8px",
+				sm: "12px",
+				md: "16px",
+				lg: "22px",
+				xl: "28px",
+				xxl: "34px",
 			},
 			maxWidth: {
 				"con-min": "900px",
@@ -68,7 +73,7 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwindcss-3d")],
 }
 
 export default config

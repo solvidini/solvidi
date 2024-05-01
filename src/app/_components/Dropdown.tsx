@@ -3,14 +3,14 @@ import { FaChevronRight } from "react-icons/fa"
 import { twMerge } from "tailwind-merge"
 import { Button } from "./Button"
 
-interface DropdownProps {
+interface IDropdownProps {
 	position?: "top" | "bottom"
 	value: string
 	children: ReactElement[]
 	className?: string
 }
 
-export const Dropdown: FC<DropdownProps> = ({
+export const Dropdown: FC<IDropdownProps> = ({
 	position = "bottom",
 	value,
 	children,
@@ -44,10 +44,11 @@ export const Dropdown: FC<DropdownProps> = ({
 		<div
 			ref={dropdownRef}
 			className={twMerge(
-				"relative inline-block select-none z-[100]",
+				"relative inline-block select-none z-[1000]",
 				position === "top" ? "origin-bottom" : "origin-top",
 				className,
-			)}>
+			)}
+		>
 			<Button onClick={toggleDropdown}>
 				{value}
 				<FaChevronRight
@@ -66,14 +67,17 @@ export const Dropdown: FC<DropdownProps> = ({
 			{isOpen && (
 				<div
 					className={twMerge(
-						"absolute left-1/2 transform -translate-x-1/2 min-w-[140px] bg-primary cp-dropdown before:absolute before:bg-black before:-z-10 before:w-[96%] before:h-[98%] before:translate-x-[2%] before:translate-y-[1%] before:cp-dropdown before:overflow-hidden",
+						"absolute left-1/2 transform -translate-x-1/2 min-w-[140px] bg-primary",
+						"before:absolute before:bg-black before:-z-10 before:w-[100%] before:h-[100%] before:translate-x-[-3%] before:translate-y-[-3%] before:overflow-hidden",
 						position === "top" ? "bottom-full mb-1" : "top-full mt-1",
-					)}>
+					)}
+				>
 					<ul
 						className="py-1"
 						role="menu"
 						aria-orientation="vertical"
-						aria-labelledby="options-menu">
+						aria-labelledby="options-menu"
+					>
 						{children}
 					</ul>
 				</div>

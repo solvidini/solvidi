@@ -1,5 +1,8 @@
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
+import { Header } from "../_components/Header"
+import { PlaylistCard } from "../_components/PlaylistCard"
+import { SongCard } from "../_components/SongCard"
 
 export default async function Home({
 	params: { lang },
@@ -11,7 +14,10 @@ export default async function Home({
 	return (
 		<main className="relative min-h-screen w-full fade-in">
 			{/* <BackgroundVideo /> */}
-			<iframe src="https://open.spotify.com/embed/track/6dHKwnhGnfi7r02W4WTcm5?utm_source=generator" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			{/* <MusicCard className="w-4/5 mt-10" link="https://open.spotify.com/embed/track/6dHKwnhGnfi7r02W4WTcm5?utm_source=generator" /> */}
+			<Header className="m-md">Latest releases</Header>
+			<SongCard link="https://open.spotify.com/embed/track/6dHKwnhGnfi7r02W4WTcm5?utm_source=generator" />
+			<PlaylistCard link="https://open.spotify.com/embed/playlist/5qCtLyjiLSTmSiXkb78g6n?utm_source=generator&theme=0" />
 			{/* <div className="z-1 absolute top-4 left-4">
 				<LocaleSwitcher dropdownPosition="bottom" />
 			</div>

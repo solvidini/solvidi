@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { PageTitle } from "@/app/_components/PageTitle"
+import { Title } from "@/app/_components/Title"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 
@@ -12,21 +12,19 @@ export default async function About({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-10">
-			<PageTitle>{`🌟 ${d.about.title} 🌟`}</PageTitle>
-			<article className="max-w-con-min flex flex-col items-center gap-6 md:gap-8 px-4 md:p-6 text-left mx-auto">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg mb-xxl">
+			<Title>{d.about.title}</Title>
+			<article className="relative w-full max-w-con-min px-lg flex flex-col items-center justify-center gap-lg">
 				<Image
-					className="transition-all ease-in-out duration-300 hover:scale-105 hover:brightness-105"
-					src="/betta-fish.png"
-					alt="Betta Fish"
+					className="transition-all z-10 ease-in-out duration-300 hover:scale-105 hover:brightness-105 rounded-full border-l-[6px] border-primary"
+					src="/solvidi.jpeg"
+					alt="Solvidi"
 					width={300}
-					height={225}
+					height={300}
 					priority
 				/>
-				<div className="flex flex-col gap-4">
+				<div className="text-justify">
 					<p>{d.about.description[0]}</p>
-					<p>{d.about.description[1]}</p>
-					<p>{d.about.description[2]}</p>
 				</div>
 			</article>
 		</main>

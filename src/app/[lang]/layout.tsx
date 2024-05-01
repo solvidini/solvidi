@@ -1,4 +1,4 @@
-import { Caveat, Inter, Playpen_Sans } from "next/font/google"
+import { Barlow, Caveat, Inter } from "next/font/google"
 import { ReactNode } from "react"
 import { FaChevronUp } from "react-icons/fa"
 
@@ -9,14 +9,15 @@ import { twMerge } from "tailwind-merge"
 import { Locale, i18n } from "../../i18n-config"
 import { Drawer } from "./_components/Drawer"
 import { Footer } from "./_components/Footer"
-import { Header } from "./_components/Header"
+import { Toolbar } from "./_components/Toolbar"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" })
-const playpen_sans = Playpen_Sans({
+const barlow = Barlow({
 	subsets: ["latin"],
-	variable: "--font-playpen",
+	variable: "--font-barlow",
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
 
 export async function generateMetadata({
@@ -27,7 +28,7 @@ export async function generateMetadata({
 	const d = await fetchDictionary(lang)
 
 	return {
-		title: "Seishin Dreams",
+		title: "Solvidi",
 		description: d.about.description[0],
 	}
 }
@@ -49,26 +50,26 @@ export default function RootLayout({
 			className={twMerge(
 				inter.variable,
 				caveat.variable,
-				playpen_sans.variable,
+				barlow.variable,
 			)}
 		>
 			<body
-				className={playpen_sans.className}
+				className={barlow.className}
 				suppressHydrationWarning={true}
 			>
 				<div className="fixed w-screen h-screen bg-repeat opacity-5 bg-[length:300px_300px] bg-luxury-pattern" />
 				<div
 					className="relative max-w-con-max mx-auto"
 				>
-					<div className="w-full h-[70px] flex items-center justify-center text-white">
+					<div className="w-full h-[82px] flex justify-center text-white">
 						<FaChevronUp
 							size={50}
-							className="text-secondary"
+							className="text-primary"
 						/>
 					</div>
 					<LocaleProvider locale={lang}>
 						<UIProvider>
-							<Header />
+							<Toolbar />
 							{children}
 							<Footer />
 							<Drawer />

@@ -28,20 +28,23 @@ export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({
 		<Dropdown
 			position={dropdownPosition}
 			value={getLocaleLanguage(locale)}
-			className="z-[100]">
+			className="z-[100]"
+		>
 			{locales.map((l) => {
 				return (
 					<li
 						key={l}
-						className="whitespace-nowrap">
+						className="whitespace-nowrap"
+					>
 						<Link
 							className={twMerge(
-								"px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-primary",
+								"px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-secondary",
 								l === locale
 									? "pointers-none cursor-not-allowed opacity-50 pointer-events-none"
 									: "",
 							)}
-							href={redirectedPathName(l)}>
+							href={redirectedPathName(l)}
+						>
 							{getLocaleLanguage(l)}
 						</Link>
 					</li>

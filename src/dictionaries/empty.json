@@ -2,13 +2,14 @@
   "common": {
     "home": "",
     "about": "",
-    "books": "",
-    "contact": "",
     "music": "",
-    "prints": "",
-    "wallpapers": "",
+    "it": "",
+    "featured": "",
+    "contact": "",
     "buy_now": "",
-    "download": ""
+    "download": "",
+    "cookies": "",
+    "more": ""
   },
   "home": {
     "welcome": "",
@@ -17,48 +18,30 @@
   "about": {
     "title": "",
     "description": [
-      "",
-      "",
-      ""
-    ]
-  },
-  "books": {
-    "title": "",
-    "description": [
-      "",
-      "",
-      ""
-    ],
-    "author": "",
-    "coloring_book_animals": "",
-    "coming_soon": {
-      "title": "",
-      "description": ""
-    },
-    "coloring_book_mindfulness": ""
-  },
-  "prints": {
-    "title": "",
-    "description": [
-      "",
-      "",
-      ""
-    ]
-  },
-  "wallpapers": {
-    "title": "",
-    "description": [
-      "",
-      "",
       ""
     ]
   },
   "music": {
     "title": "",
     "description": [
-      "",
-      "",
-      "",
+      ""
+    ],
+    "latest": "",
+    "playlists": ""
+  },
+  "it": {
+    "title": "",
+    "description": [
+      ""
+    ],
+    "skills": {
+      "title": "",
+      "other": ""
+    }
+  },
+  "featured": {
+    "title": "",
+    "description": [
       ""
     ]
   },
