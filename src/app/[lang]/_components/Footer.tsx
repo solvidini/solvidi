@@ -1,12 +1,12 @@
 "use client"
 
-import Image from "next/image"
 import { FaChevronUp } from "react-icons/fa"
 
 import { socialMedia } from "@/_config"
 import { useLocale } from "@/_contexts/locale-context"
 import { getCurrentYear, scrollToTop } from "@/_utils"
 import { ExternalLink } from "@/app/_components/ExternalLink"
+import { IconLink } from "@/app/_components/IconLink"
 import { LocaleSwitcher } from "@/app/_components/LocaleSwitcher"
 import { Navigation } from "@/app/_components/Navigation"
 
@@ -14,7 +14,7 @@ export const Footer = () => {
 	const { dictionary: d } = useLocale()
 
 	return (
-		<footer className="relative flex flex-col bg-black">
+		<footer className="relative flex flex-col bg-black mt-xxl">
 			<button
 				onClick={scrollToTop}
 				className="w-[36px] h-[36px] rotate-45 rounded-tl-md rounded-br-lg bg-light absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
@@ -35,19 +35,12 @@ export const Footer = () => {
 						socialMedia.tiktok,
 						socialMedia.youtube,
 					].map((sm) => (
-						<ExternalLink
+						<IconLink
 							key={sm.title}
-							className="hover:scale-125"
-							to={sm.link}
-						>
-							<Image
-								src={sm.img}
-								alt={sm.title}
-								width={30}
-								height={30}
-								priority
-							/>
-						</ExternalLink>
+							title={sm.title}
+							link={sm.link}
+							imgSrc={sm.img}
+						/>
 					))}
 				</div>
 

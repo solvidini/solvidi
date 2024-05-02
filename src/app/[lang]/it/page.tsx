@@ -1,8 +1,6 @@
-import Image from "next/image"
-
 import { socialMedia } from "@/_config"
-import { ExternalLink } from "@/app/_components/ExternalLink"
 import { Header } from "@/app/_components/Header"
+import { IconLink } from "@/app/_components/IconLink"
 import { Title } from "@/app/_components/Title"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
@@ -16,7 +14,7 @@ export default async function It({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg mb-xxl">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg">
 			<Title>{d.it.title}</Title>
 			<article className="w-full max-w-con-min px-lg flex flex-col items-center justify-center">
 				<div className="text-justify mb-md">
@@ -24,20 +22,15 @@ export default async function It({
 				</div>
 				<section className="w-full flex items-center justify-center gap-md mb-md">
 					{[socialMedia.github, socialMedia.linkedin].map((sm) => (
-						<ExternalLink
+						<IconLink
 							key={sm.title}
-							className="hover:scale-125"
-							to={sm.link}
-						>
-							<Image
-								src={sm.img}
-								alt={sm.title}
-								width={60}
-								height={60}
-								className="w-[50px] md:w-[60px] h-[50px] md:h-[60px]"
-								priority
-							/>
-						</ExternalLink>
+							title={sm.title}
+							link={sm.link}
+							imgSrc={sm.img}
+							width={60}
+							height={60}
+							iconClassName="w-[50px] md:w-[60px] h-[50px] md:h-[60px]"
+						/>
 					))}
 				</section>
 				<Header className="mt-xl self-start">{d.it.skills.title}</Header>

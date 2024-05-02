@@ -23,7 +23,7 @@ export const socialMedia: Record<ISocialMediaType, ISocialMedia> = {
 		link: "https://www.facebook.com/seishin.dreams",
 	},
 	linkedin: {
-		title: "Linkedin",
+		title: "LinkedIn",
 		img: "/linkedin.svg",
 		link: "https://www.linkedin.com/in/samuelkedziora",
 	},

@@ -1,8 +1,8 @@
-import Image from "next/image"
 import { FaEnvelope } from "react-icons/fa"
 
 import { socialMedia } from "@/_config"
 import { ExternalLink } from "@/app/_components/ExternalLink"
+import { IconLink } from "@/app/_components/IconLink"
 import { Title } from "@/app/_components/Title"
 import { SolvidiSVG } from "@/app/_svg/solvidi"
 import { fetchDictionary } from "@/get-dictionary"
@@ -40,23 +40,18 @@ export default async function Contact({
 						socialMedia.spotify,
 						socialMedia.soundcloud,
 					].map((sm) => (
-						<ExternalLink
+						<IconLink
 							key={sm.title}
-							className="hover:scale-125"
-							to={sm.link}
-						>
-							<Image
-								src={sm.img}
-								alt={sm.title}
-								width={60}
-								height={60}
-								className="w-[50px] md:w-[60px] h-[50px] md:h-[60px]"
-								priority
-							/>
-						</ExternalLink>
+							title={sm.title}
+							link={sm.link}
+							imgSrc={sm.img}
+							width={60}
+							height={60}
+							iconClassName="w-[50px] md:w-[60px] h-[50px] md:h-[60px]"
+						/>
 					))}
 				</section>
-				<SolvidiSVG className="fade-in fill-light w-[300px] ml-sm" />
+				<SolvidiSVG className="fade-in fill-light w-[300px] max-w-full ml-sm" />
 			</article>
 		</main>
 	)

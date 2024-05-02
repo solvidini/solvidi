@@ -3,61 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-	.image-fade-away {
-		mask-image: linear-gradient(
-			transparent 0%,
-			#0a0a0a 10%,
-			#0a0a0a 90%,
-			transparent 100%
-		);
-		-webkit-mask-image: linear-gradient(
-			transparent 0%,
-			#0a0a0a 10%,
-			#0a0a0a 90%,
-			transparent 100%
-		);
-	}
-
 	.cp-header {
 		clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%);
 	}
 
 	.cp-button {
 		clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-	}
-
-	.cp-footer {
-		clip-path: polygon(
-			0% 1.75%,
-			8.02% 4.56%,
-			9.39% 0.65%,
-			37.27% 3.11%,
-			45.75% 0.65%,
-			68.63% 1.55%,
-			73.1% 0%,
-			86.79% 0.65%,
-			100% 0%,
-			100% 100%,
-			57.75% 100%,
-			0% 100%
-		);
-	}
-
-	.cp-drawer {
-		clip-path: polygon(
-			0% 18.25%,
-			27.75% 4%,
-			26.38% 8.75%,
-			43.63% 2.54%,
-			61.9% 4%,
-			74.83% 5.03%,
-			63.79% 8.75%,
-			85.03% 5.85%,
-			85.73% 10.98%,
-			100% 15.15%,
-			100% 100%,
-			0% 100%
-		);
 	}
 
 	.cp-triangle {

@@ -6,7 +6,6 @@ import { navigation } from "@/_config/navigation"
 import { useLocale } from "@/_contexts/locale-context"
 import { useUI } from "@/_contexts/ui-context"
 import { LocaleLink } from "@/app/_components/LocaleLink"
-import { twMerge } from "tailwind-merge"
 
 interface INavigationProps {
 	isDrawer?: boolean
@@ -18,12 +17,7 @@ export const Navigation: FC<INavigationProps> = ({ isDrawer = false }) => {
 
 	return (
 		<nav className="z-10">
-			<ul
-				className={twMerge(
-					"flex uppercase items-center justify-center gap-md flex-wrap",
-					isDrawer ? "w-[300px]" : "w-auto",
-				)}
-			>
+			<ul className="flex uppercase items-center justify-center gap-md flex-wrap">
 				{navigation.map((n) => (
 					<li key={n.title}>
 						<LocaleLink

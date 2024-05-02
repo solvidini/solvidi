@@ -12,7 +12,7 @@ export default async function About({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg mb-xxl">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg">
 			<Title>{d.about.title}</Title>
 			<article className="relative w-full max-w-con-min px-lg flex flex-col items-center justify-center gap-lg">
 				<Image
