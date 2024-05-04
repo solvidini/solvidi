@@ -49,6 +49,7 @@ export default async function Music({
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
 					{songs.map(({ url }) => (
 						<SongCard
+							key={url}
 							theme
 							link={url}
 						/>
@@ -58,6 +59,7 @@ export default async function Music({
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
 					{playlists.map(({ url }) => (
 						<PlaylistCard
+							key={url}
 							theme
 							link={url}
 						/>

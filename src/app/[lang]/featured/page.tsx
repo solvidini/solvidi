@@ -23,7 +23,10 @@ export default async function Featured({
 				</section>
 				<section className="max-w-con-min mx-auto flex flex-col items-center justify-center gap-md">
 					{projects.map((project) => (
-						<div className="relative rounded-md">
+						<div
+							key={project.id}
+							className="relative rounded-md"
+						>
 							<Header>{project.title}</Header>
 							<Image
 								className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-secondary rounded-b-md rounded-tr-md"
