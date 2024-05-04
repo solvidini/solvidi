@@ -1,59 +1,59 @@
 {
-  "common": {
-    "home": "Home",
-    "about": "About",
-    "music": "Music",
-    "it": "IT",
-    "featured": "Featured",
-    "contact": "Contact",
-    "buy_now": "Buy Now",
-    "download": "Download",
-    "cookies": "This website embeds external content from platforms like Spotify and SoundCloud, which may use cookies. By using this website, you acknowledge and consent to the use of cookies by these third-party services.",
-    "more": "And more",
-    "discover_more": "Discover more",
-    "go_to": "Go to page"
-  },
-  "home": {
-    "welcome": "Welcome to the world of creativity!",
-    "quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\"",
-    "magical_world": "Explore the magical world"
-  },
-  "about": {
-    "title": "About Me",
-    "description": [
-      "I'm Samuel Kędziora, a creative enthusiast with a passion for crafting diverse music, exploring art in its various forms, and venturing into new creative territories. 🎵 From composing soul-stirring melodies to exploring the depths of artistic expression, 🎨 I immerse myself in each endeavor with genuine dedication. Alongside my artistic pursuits, I delve into the world of programming, aiming to fuse technology with creativity to innovate and inspire. 💻 💡 With an unwavering commitment to excellence, I continue to evolve and grow on my creative journey."
-    ]
-  },
-  "music": {
-    "title": "Music",
-    "description": [
-      "🎵 Step into my musical realm, where innovation and diversity shape every sound. 🌟 From experimental twists to alternative vibes, instrumental serenity, rap beats, and the ethereal trance of electronic music, my compositions traverse a vast sonic landscape. 🎶 With each note, my aim is clear: to spread mindfulness and joy through both sound and lyrics, creating an immersive experience that resonates deeply with the soul. 🌿 Join me on this adventurous sonic odyssey. 🎹"
-    ],
-    "latest": "Latest releases",
-    "playlists": "Playlists",
-    "listen": "Listen to the latest releases"
-  },
-  "it": {
-    "title": "IT",
-    "description": [
-      "🚀 As a seasoned Frontend Developer, I possess an unwavering passion for programming and strive to continuously expand my knowledge and skills. I remain deeply engrossed in the latest trends shaping the realm of website, web application, blog, and game development. 💻 My expertise lies in driving seamless user experiences by meticulously addressing UI and UX details, ensuring optimal performance across all devices. 🎨 While specializing in JavaScript and other cutting-edge front-end technologies, I also dedicate myself to honing my proficiency in server technologies. 🔧"
-    ],
-    "skills": {
-      "title": "Technologies I use",
-      "other": "Other"
-    }
-  },
-  "featured": {
-    "title": "Featured",
-    "description": [
-      "🌟 Discover featured projects—a showcase of my creative endeavors and innovative collaborations. Dive in and explore the diverse range of work crafted with passion and dedication."
-    ]
-  },
-  "contact": {
-    "title": "Contact",
-    "description": [
-      "Feel free to reach out to me for collaborations, inquiries, or just to say hello at:",
-      "I'm always excited to connect with fellow creatives and enthusiasts. Let's start a conversation!"
-    ]
-  }
+	"common": {
+		"home": "Home",
+		"about": "About",
+		"music": "Music",
+		"it": "IT",
+		"featured": "Featured",
+		"contact": "Contact",
+		"buy_now": "Buy Now",
+		"download": "Download",
+		"cookies": "This website embeds external content from platforms like Spotify and SoundCloud, which may use cookies. By using this website, you acknowledge and consent to the use of cookies by these third-party services.",
+		"more": "And more",
+		"discover_more": "Discover more",
+		"go_to": "Go to page"
+	},
+	"home": {
+		"welcome": "Welcome to the world of creativity!",
+		"quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\"",
+		"magical_world": "Explore the magical world"
+	},
+	"about": {
+		"title": "About Me",
+		"description": [
+			"I'm Samuel, a creative enthusiast with a passion for crafting diverse music, exploring art in its various forms, and venturing into new creative territories. 🎵 From composing soul-stirring melodies to exploring the depths of artistic expression, 🎨 I immerse myself in each endeavor with genuine dedication. Alongside my artistic pursuits, I delve into the world of programming, aiming to fuse technology with creativity to innovate and inspire. 💻 💡 With an unwavering commitment to excellence, I continue to evolve and grow on my creative journey."
+		]
+	},
+	"music": {
+		"title": "Music",
+		"description": [
+			"🎵 Step into my musical realm, where innovation and diversity shape every sound. 🌟 From experimental twists to alternative vibes, instrumental serenity, rap beats, and the ethereal trance of electronic music, my compositions traverse a vast sonic landscape. 🎶 With each note, my aim is clear: to spread mindfulness and joy through both sound and lyrics, creating an immersive experience that resonates deeply with the soul. 🌿 Join me on this adventurous sonic odyssey. 🎹"
+		],
+		"latest": "Latest releases",
+		"playlists": "Playlists",
+		"listen": "Listen to the latest releases"
+	},
+	"it": {
+		"title": "IT",
+		"description": [
+			"🚀 As a seasoned Frontend Developer, I possess an unwavering passion for programming and strive to continuously expand my knowledge and skills. I remain deeply engrossed in the latest trends shaping the realm of website, web application, blog, and game development. 💻 My expertise lies in driving seamless user experiences by meticulously addressing UI and UX details, ensuring optimal performance across all devices. 🎨 While specializing in JavaScript and other cutting-edge front-end technologies, I also dedicate myself to honing my proficiency in server technologies. 🔧"
+		],
+		"skills": {
+			"title": "Technologies I use",
+			"other": "Other"
+		}
+	},
+	"featured": {
+		"title": "Featured",
+		"description": [
+			"🌟 Discover featured projects—a showcase of my creative endeavors and innovative collaborations. Dive in and explore the diverse range of work crafted with passion and dedication."
+		]
+	},
+	"contact": {
+		"title": "Contact",
+		"description": [
+			"Feel free to reach out to me for collaborations, inquiries, or just to say hello at:",
+			"I'm always excited to connect with fellow creatives and enthusiasts. Let's start a conversation!"
+		]
+	}
 }
