@@ -57,11 +57,11 @@ async function updateTranslations(pathToUpdate, translations) {
 // }
 
 const translations = {
-	en: "Other",
-	pl: "Inne",
-	pt: "Outros",
-	jp: "その他",
-	empty: "",
+  en: "Listen to the latest releases",
+  pl: "Posłuchaj ostatnich wydań",
+  pt: "Ouça os últimos lançamentos",
+  jp: "最新リリースを聴く",
+  empty: "",
 };
 
-updateTranslations("it.skills.other", translations)
+updateTranslations("music.listen", translations)

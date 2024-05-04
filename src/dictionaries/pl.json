@@ -9,11 +9,14 @@
     "buy_now": "Kup teraz",
     "download": "Pobierz",
     "cookies": "Ta strona internetowa zawiera zewnętrzne treści z platform takich jak Spotify i SoundCloud, które mogą używać plików cookie. Korzystając z tej strony internetowej, akceptujesz i wyrażasz zgodę na korzystanie z plików cookie przez te usługi stron trzecich.",
-    "more": "I więcej"
+    "more": "I więcej",
+    "discover_more": "Odkryj więcej",
+    "go_to": "Przejdź do strony"
   },
   "home": {
     "welcome": "Witaj w świecie kreatywności!",
-    "quote": "\"Marzenia są nasionami przyszłości. Pielęgnuj je, wierz w nie, i obserwuj, jak kwitną w rzeczywistość.\""
+    "quote": "\"Marzenia są nasionami przyszłości. Pielęgnuj je, wierz w nie, i obserwuj, jak kwitną w rzeczywistość.\"",
+    "magical_world": "Zobacz magiczny świat"
   },
   "about": {
     "title": "O mnie",
@@ -27,7 +30,8 @@
       "🎵 Wkraczaj do mojego muzycznego świata, gdzie innowacja i różnorodność kształtują każdy dźwięk. 🌟 Od eksperymentalnych odchyleń po alternatywne wibracje, spokojne instrumentale, bit hip-hopowe i eteryczną trans muzykę elektroniczną, moje kompozycje przemierzają rozległy krajobraz dźwięków. 🎶 Z każdą nutą, mój cel jest jasny: szerzenie uważności i radości zarówno poprzez dźwięk, jak i teksty, tworząc immersyjne doświadczenie, które rezonuje głęboko z duszą. 🌿 Dołącz do mnie w tej pełnej przygód dźwiękowej odysei. 🎹"
     ],
     "latest": "Najnowsze wydania",
-    "playlists": "Listy odtwarzania"
+    "playlists": "Listy odtwarzania",
+    "listen": "Posłuchaj ostatnich wydań"
   },
   "it": {
     "title": "IT",

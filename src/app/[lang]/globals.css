@@ -28,4 +28,15 @@
 			column-count: 4;
 		}
 	}
+
+	.bg-speaker {
+		background: radial-gradient(
+			circle,
+			#222 0%,
+			#282828 30%,
+			#393939 60%,
+			#444 80%,
+			#555 100%
+		);
+	}
 }

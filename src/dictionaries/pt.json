@@ -9,11 +9,14 @@
     "buy_now": "Comprar Agora",
     "download": "Baixar",
     "cookies": "Este site incorpora conteúdo externo de plataformas como Spotify e SoundCloud, que podem utilizar cookies. Ao usar este site, você reconhece e consente com o uso de cookies por esses serviços de terceiros.",
-    "more": "E mais"
+    "more": "E mais",
+    "discover_more": "Descubra mais",
+    "go_to": "Ir para a página"
   },
   "home": {
     "welcome": "Bem-vindo ao mundo da criatividade!",
-    "quote": "\"Os sonhos são as sementes do futuro. Cultive-os, acredite neles e observe-os florescer na realidade.\""
+    "quote": "\"Os sonhos são as sementes do futuro. Cultive-os, acredite neles e observe-os florescer na realidade.\"",
+    "magical_world": "Explore o mundo mágico"
   },
   "about": {
     "title": "Sobre Mim",
@@ -27,7 +30,8 @@
       "🎵 Adentre meu universo musical, onde inovação e diversidade moldam cada som. 🌟 De reviravoltas experimentais a vibrações alternativas, serenidade instrumental, batidas de rap e o etéreo trance da música eletrônica, minhas composições percorrem uma vasta paisagem sonora. 🎶 Com cada nota, meu objetivo é claro: espalhar mindfulness e alegria através do som e das letras, criando uma experiência imersiva que ressoa profundamente com a alma. 🌿 Junte-se a mim nesta odisseia sonora cheia de aventuras. 🎹"
     ],
     "latest": "Últimos lançamentos",
-    "playlists": "Listas de reprodução"
+    "playlists": "Listas de reprodução",
+    "listen": "Ouça os últimos lançamentos"
   },
   "it": {
     "title": "TI",

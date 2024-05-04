@@ -1,3 +1,5 @@
+"use client"
+
 import { useLocale } from "@/_contexts/locale-context"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -25,14 +27,16 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 	return (
 		<Link
 			onClick={onClick}
-			className={twMerge("text-sm leading-[1.6rem]",
-				className,
+			className={twMerge(
+				"text-sm leading-[1.6rem]",
 				pathname === getLocaleUrl(to)
 					? "text-black font-semibold"
 					: "text-dark",
-				isDrawer && "text-md"
+				isDrawer && "text-md",
+				className,
 			)}
-			href={getLocaleUrl(to)}>
+			href={getLocaleUrl(to)}
+		>
 			{children}
 		</Link>
 	)

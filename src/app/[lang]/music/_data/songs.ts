@@ -9,4 +9,8 @@ export const songs: Array<ISong> = [
 		title: "Trancendence",
 		url: "https://open.spotify.com/embed/track/1H05mWmVptEz18BPrsBgwE?utm_source=generator",
 	},
+	{
+		title: "Jungle Realm",
+		url: "https://open.spotify.com/embed/album/5E6JogSWaY1JCD9bi1uBv0?utm_source=generator",
+	},
 ]

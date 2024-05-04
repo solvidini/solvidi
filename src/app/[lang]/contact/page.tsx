@@ -18,12 +18,12 @@ export default async function Contact({
 	return (
 		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in">
 			<Title>{d.contact.title}</Title>
-			<article className="max-w-con-min flex flex-col items-center gap-6 md:gap-8 p-4 pt-2 pb-6 md:p-6 xs:pt-4 mx-auto">
+			<article className="mt-md max-w-con-min flex flex-col items-center gap-md px-lg">
 				<section className="flex flex-col gap-4">
 					<div className="flex flex-wrap justify-center">
 						<p className="text-left mr-2">{d.contact.description[0]}</p>
 						<ExternalLink
-							className="text-tertiary inline-flex items-center"
+							className="text-tertiary-light inline-flex items-center"
 							to="mailto:contact@solvidi.pro"
 						>
 							<FaEnvelope className="mr-1" /> contact@solvidi.pro
@@ -51,7 +51,7 @@ export default async function Contact({
 						/>
 					))}
 				</section>
-				<SolvidiSVG className="fade-in fill-light w-[300px] max-w-full ml-sm" />
+				<SolvidiSVG className="mt-lg fade-in fill-light w-[300px] max-w-full ml-sm" />
 			</article>
 		</main>
 	)

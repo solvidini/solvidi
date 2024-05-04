@@ -9,10 +9,10 @@ interface IHeaderProps {
 export const Header: FC<IHeaderProps> = ({ children, className }) => (
 	<div
 		className={twMerge(
-			"drop-shadow-element inline-flex items-center justify-center relative w-auto h-[40px] cp-header bg-primary text-center px-[48px]",
+			"drop-shadow-element whitespace-nowrap inline-flex items-center justify-center relative w-auto h-[32px] sm:h-[40px] cp-header bg-primary text-center px-[40px] sm:px-[48px]",
 			className,
 		)}
 	>
-		<h2 className="text-lg">{children}</h2>
+		<h2 className="sm:text-lg">{children}</h2>
 	</div>
 )

@@ -1,4 +1,5 @@
 import { socialMedia } from "@/_config"
+import { AudioWave } from "@/app/_components/AudioWave"
 import { Header } from "@/app/_components/Header"
 import { IconLink } from "@/app/_components/IconLink"
 import { PlaylistCard } from "@/app/_components/PlaylistCard"
@@ -16,13 +17,17 @@ export default async function Music({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in overflow-x-hidden">
 			<Title>{d.music.title}</Title>
+			<AudioWave
+				className="flex items-center justify-center p-md scale-[0.6] sm:scale-[1]"
+				amount={40}
+			/>
 			<article className="w-full max-w-con px-lg">
-				<section className="max-w-con-min mx-auto text-justify my-md">
+				<section className="max-w-con-min mx-auto text-justify">
 					{d.music.description}
 				</section>
-				<section className="w-full flex items-center justify-center gap-md mb-md">
+				<section className="w-full flex items-center justify-center gap-md my-md">
 					{[
 						socialMedia.spotify,
 						socialMedia.soundcloud,

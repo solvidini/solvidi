@@ -9,11 +9,14 @@
     "buy_now": "Buy Now",
     "download": "Download",
     "cookies": "This website embeds external content from platforms like Spotify and SoundCloud, which may use cookies. By using this website, you acknowledge and consent to the use of cookies by these third-party services.",
-    "more": "And more"
+    "more": "And more",
+    "discover_more": "Discover more",
+    "go_to": "Go to page"
   },
   "home": {
     "welcome": "Welcome to the world of creativity!",
-    "quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\""
+    "quote": "\"Dreams are the seeds of the future. Nurture them, believe in them, and watch them bloom into reality.\"",
+    "magical_world": "Explore the magical world"
   },
   "about": {
     "title": "About Me",
@@ -27,7 +30,8 @@
       "🎵 Step into my musical realm, where innovation and diversity shape every sound. 🌟 From experimental twists to alternative vibes, instrumental serenity, rap beats, and the ethereal trance of electronic music, my compositions traverse a vast sonic landscape. 🎶 With each note, my aim is clear: to spread mindfulness and joy through both sound and lyrics, creating an immersive experience that resonates deeply with the soul. 🌿 Join me on this adventurous sonic odyssey. 🎹"
     ],
     "latest": "Latest releases",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "listen": "Listen to the latest releases"
   },
   "it": {
     "title": "IT",

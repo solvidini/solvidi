@@ -9,11 +9,14 @@
     "buy_now": "",
     "download": "",
     "cookies": "",
-    "more": ""
+    "more": "",
+    "discover_more": "",
+    "go_to": ""
   },
   "home": {
     "welcome": "",
-    "quote": ""
+    "quote": "",
+    "magical_world": ""
   },
   "about": {
     "title": "",
@@ -27,7 +30,8 @@
       ""
     ],
     "latest": "",
-    "playlists": ""
+    "playlists": "",
+    "listen": ""
   },
   "it": {
     "title": "",

@@ -14,13 +14,13 @@ export default async function It({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in gap-lg">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in">
 			<Title>{d.it.title}</Title>
-			<article className="w-full max-w-con-min px-lg flex flex-col items-center justify-center">
-				<div className="text-justify mb-md">
+			<article className="w-full max-w-con-min px-lg flex flex-col items-center justify-center mt-md gap-md">
+				<div className="text-justify">
 					<p>{d.it.description[0]}</p>
 				</div>
-				<section className="w-full flex items-center justify-center gap-md mb-md">
+				<section className="w-full flex items-center justify-center gap-md">
 					{[socialMedia.github, socialMedia.linkedin].map((sm) => (
 						<IconLink
 							key={sm.title}
@@ -33,7 +33,7 @@ export default async function It({
 						/>
 					))}
 				</section>
-				<Header className="mt-xl self-start">{d.it.skills.title}</Header>
+				<Header className="mt-sm self-start">{d.it.skills.title}</Header>
 				<section className="max-w-con-min">
 					<TechnologyMatrix />
 				</section>

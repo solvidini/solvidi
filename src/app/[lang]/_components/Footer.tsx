@@ -21,7 +21,7 @@ export const Footer = () => {
 			>
 				<FaChevronUp
 					size={26}
-					className="animate-bounce -rotate-45 text-secondary -mt-[7px] -ml-[7px]"
+					className="animate-bounce -rotate-45 text-primary -mt-[7px] -ml-[7px]"
 				/>
 			</button>
 

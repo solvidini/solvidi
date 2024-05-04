@@ -12,7 +12,7 @@ export const Loader: FC<ILoaderProps> = ({ className }) => (
 	>
 		<svg
 			aria-hidden="true"
-			className="w-[80px] h-[80px] text-secondary-dark animate-spin fill-secondary"
+			className="w-[80px] h-[80px] text-secondary animate-spin fill-primary"
 			viewBox="0 0 100 101"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

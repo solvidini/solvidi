@@ -1,7 +1,7 @@
 {
 	"name": "solvidi",
-	"author": "Sol samuel@front-up.pro",
-	"version": "1.7.0",
+	"author": "Sol contact@solvidi.pro",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
