@@ -23,8 +23,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)"],
-				caveat: ["var(--font-caveat)"],
-				playpen: ["var(--font-playpen)"],
+				barlow: ["var(--font-barlow)"],
 			},
 			backgroundImage: {
 				"luxury-pattern": "url('/luxury-pattern.jpg')",

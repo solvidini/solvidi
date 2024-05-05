@@ -35,10 +35,11 @@ export default async function Contact({
 				</section>
 				<section className="flex items-center justify-center space-x-4 text-blue-300">
 					{[
+						socialMedia.spotify,
 						socialMedia.linkedin,
 						socialMedia.instagram,
-						socialMedia.spotify,
-						socialMedia.soundcloud,
+						socialMedia.tiktok,
+						socialMedia.youtube,
 					].map((sm) => (
 						<IconLink
 							key={sm.title}

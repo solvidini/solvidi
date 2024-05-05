@@ -1,4 +1,4 @@
-import { Barlow, Caveat, Inter } from "next/font/google"
+import { Barlow, Inter } from "next/font/google"
 import { ReactNode } from "react"
 import { FaChevronUp } from "react-icons/fa"
 
@@ -13,11 +13,10 @@ import { Toolbar } from "./_components/Toolbar"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" })
 const barlow = Barlow({
 	subsets: ["latin"],
 	variable: "--font-barlow",
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
 export async function generateMetadata({
@@ -47,20 +46,14 @@ export default function RootLayout({
 	return (
 		<html
 			lang={lang}
-			className={twMerge(
-				inter.variable,
-				caveat.variable,
-				barlow.variable,
-			)}
+			className={twMerge(inter.variable, barlow.variable)}
 		>
 			<body
 				className={barlow.className}
 				suppressHydrationWarning={true}
 			>
 				<div className="fixed w-screen h-screen bg-repeat opacity-5 bg-[length:300px_300px] bg-luxury-pattern" />
-				<div
-					className="relative max-w-con-max mx-auto"
-				>
+				<div className="relative max-w-con-max mx-auto">
 					<div className="w-full h-[82px] flex justify-center text-white">
 						<FaChevronUp
 							size={50}

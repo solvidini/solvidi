@@ -45,7 +45,7 @@ export default async function Home({
 				<Header className="m-md">{d.home.magical_world}</Header>
 				<div className="relative rounded-md">
 					<Image
-						className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-secondary rounded-b-md rounded-tr-md"
+						className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-secondary rounded-md"
 						src={projects[0].src}
 						alt={projects[0].title}
 						width={1600}
