@@ -34,7 +34,7 @@ export default async function Home({
 				</div>
 				<div className="relatirve text-center p-md flex items-center justify-center">
 					<LocaleLink
-						className="z-10 whitespace-nowrap text-tertiary-light py-xxs px-sm rounded-full text-lg inline-block hover:scale-110 transition-all"
+						className="z-10 whitespace-nowrap text-tertiary py-xxs px-sm rounded-full text-lg inline-block hover:scale-110 transition-all"
 						to="/music"
 					>
 						{d.common.discover_more}
@@ -43,9 +43,9 @@ export default async function Home({
 			</article>
 			<article className="w-full max-w-con px-lg">
 				<Header className="m-md">{d.home.magical_world}</Header>
-				<div className="relative rounded-md">
+				<div className="relative rounded-md max-w-con-min mx-auto">
 					<Image
-						className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-secondary rounded-md"
+						className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-primary/70 rounded-md"
 						src={projects[0].src}
 						alt={projects[0].title}
 						width={1600}
@@ -53,7 +53,7 @@ export default async function Home({
 						priority
 					/>
 					<ExternalLink
-						className="inline-block absolute bottom-0 right-0 py-xxs sm:py-xs px-md text-sm bg-tertiary sm:bg-tertiary/90 text-black rounded-br-md rounded-tl-md hover:bg-tertiary"
+						className="inline-block absolute bottom-0 right-0 py-xxs sm:py-xs px-md text-sm bg-black/70 backdrop-blur text-white rounded-br-md rounded-tl-md hover:bg-secondary/50 border-[2px] border-primary"
 						to={projects[0].url}
 					>
 						{d.common.go_to}

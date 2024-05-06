@@ -30,8 +30,8 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 			className={twMerge(
 				"text-sm leading-[1.6rem]",
 				pathname === getLocaleUrl(to)
-					? "text-black font-semibold"
-					: "text-dark",
+					? "text-white font-semibold"
+					: "text-light",
 				isDrawer && "text-md",
 				className,
 			)}

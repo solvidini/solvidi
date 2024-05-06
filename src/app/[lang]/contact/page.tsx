@@ -23,7 +23,7 @@ export default async function Contact({
 					<div className="flex flex-wrap justify-center">
 						<p className="text-left mr-2">{d.contact.description[0]}</p>
 						<ExternalLink
-							className="text-tertiary-light inline-flex items-center"
+							className="text-tertiary inline-flex items-center"
 							to="mailto:contact@solvidi.pro"
 						>
 							<FaEnvelope className="mr-1" /> contact@solvidi.pro

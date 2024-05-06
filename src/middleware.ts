@@ -13,6 +13,8 @@ const ignoredExtensions = [
 	".jpeg",
 	".jpg",
 	".mp4",
+	".mp3",
+	".wav",
 ]
 
 function getLocale(request: NextRequest): string | undefined {

@@ -26,7 +26,7 @@ export const Technology: FC<ITechnologyProps> = ({
 			id={id}
 			className={twMerge(
 				"relative z-[20] select-none perspective-origin-center backface-hidden h-[60px] min-w-[60px] sm:h-[80px] sm:min-w-[80px] lg:h-[100px] lg:min-w-[100px] w-auto p-sm text-center flex-auto cursor-pointer bg-opacity-85 bg-black/80 border border-dark origin-bottom transition-transform duration-500 ease flex items-center justify-center",
-				highlight && "border-primary-light",
+				highlight && "border-tertiary",
 				isActive &&
 					"rotate-x-[-20deg] md:rotate-x-[-30deg] lg:rotate-x-[-40deg] border-white",
 				className,

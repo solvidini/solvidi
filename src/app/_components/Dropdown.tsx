@@ -1,3 +1,5 @@
+"use client"
+
 import { FC, ReactElement, useEffect, useRef, useState } from "react"
 import { FaChevronRight } from "react-icons/fa"
 import { twMerge } from "tailwind-merge"
@@ -67,7 +69,7 @@ export const Dropdown: FC<IDropdownProps> = ({
 			{isOpen && (
 				<div
 					className={twMerge(
-						"absolute left-1/2 transform -translate-x-1/2 min-w-[140px] bg-primary",
+						"absolute left-1/2 transform -translate-x-1/2 min-w-[140px] bg-secondary",
 						"before:absolute before:bg-black before:-z-10 before:w-[100%] before:h-[100%] before:translate-x-[-3%] before:translate-y-[-3%] before:overflow-hidden",
 						position === "top" ? "bottom-full mb-1" : "top-full mt-1",
 					)}

@@ -27,7 +27,7 @@ export const TechnologyMatrix: FC = () => {
 				<div
 					className={twMerge(
 						buttonClasses,
-						highlightedType === TechnologyType.Front && "text-tertiary-light",
+						highlightedType === TechnologyType.Front && "text-tertiary",
 					)}
 					onClick={() => highlightTechnologies(TechnologyType.Front)}
 				>
@@ -36,7 +36,7 @@ export const TechnologyMatrix: FC = () => {
 				<div
 					className={twMerge(
 						buttonClasses,
-						highlightedType === TechnologyType.Back && "text-tertiary-light",
+						highlightedType === TechnologyType.Back && "text-tertiary",
 					)}
 					onClick={() => highlightTechnologies(TechnologyType.Back)}
 				>
@@ -45,7 +45,7 @@ export const TechnologyMatrix: FC = () => {
 				<div
 					className={twMerge(
 						buttonClasses,
-						highlightedType === TechnologyType.Other && "text-tertiary-light",
+						highlightedType === TechnologyType.Other && "text-tertiary",
 					)}
 					onClick={() => highlightTechnologies(TechnologyType.Other)}
 				>

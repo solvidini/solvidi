@@ -38,7 +38,7 @@ export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({
 					>
 						<Link
 							className={twMerge(
-								"px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-secondary",
+								"px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-secondary border-right-[6px] hover:border-tertiary",
 								l === locale
 									? "pointers-none cursor-not-allowed opacity-50 pointer-events-none"
 									: "",

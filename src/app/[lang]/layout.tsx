@@ -53,7 +53,7 @@ export default function RootLayout({
 				suppressHydrationWarning={true}
 			>
 				<div className="fixed w-screen h-screen bg-repeat opacity-5 bg-[length:300px_300px] bg-luxury-pattern" />
-				<div className="relative max-w-con-max mx-auto">
+				<div className="relative mx-auto">
 					<div className="w-full h-[82px] flex justify-center text-white">
 						<FaChevronUp
 							size={50}

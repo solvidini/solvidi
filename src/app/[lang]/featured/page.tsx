@@ -29,7 +29,7 @@ export default async function Featured({
 						>
 							<Header>{project.title}</Header>
 							<Image
-								className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-secondary rounded-b-md rounded-tr-md"
+								className="transition-all ease-in-out duration-300 brightness-[1.1] hover:brightness-125 border-[2px] border-primary/70 rounded-b-md rounded-tr-md"
 								src={project.src}
 								alt={project.title}
 								width={1600}
@@ -37,7 +37,7 @@ export default async function Featured({
 								priority
 							/>
 							<ExternalLink
-								className="inline-block absolute bottom-0 right-0 py-xxs sm:py-xs px-md text-sm bg-tertiary sm:bg-tertiary/90 text-black rounded-br-md rounded-tl-md hover:bg-tertiary"
+								className="inline-block absolute bottom-0 right-0 py-xxs sm:py-xs px-md text-sm bg-black/70 backdrop-blur text-white rounded-br-md rounded-tl-md hover:bg-secondary/50 border-[2px] border-primary"
 								to={project.url}
 							>
 								{d.common.go_to}

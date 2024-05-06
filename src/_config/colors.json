@@ -26,18 +26,16 @@
 		"DEFAULT": "#1BE309"
 	},
 	"tertiary": {
-		"DEFAULT": "#fad819",
-		"light": "#fde047"
+		"DEFAULT": "#03fcca"
 	},
 	"secondary": {
-		"DEFAULT": "#78142c"
+		"DEFAULT": "#00b38f"
 	},
 	"primary": {
-		"DEFAULT": "#DC143C",
-		"light": "#ff3860"
+		"DEFAULT": "#00755e"
 	},
 	"white": "#F1F1F1",
 	"black": "#101010",
-	"dark": "#282629",
+	"dark": "#212121",
 	"light": "#EEEEEE"
 }

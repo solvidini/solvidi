@@ -15,7 +15,7 @@ export const Toolbar = () => {
 	return (
 		<header
 			className={twMerge(
-				"fixed top-0 left-0 z-[200] w-full h-[50px] bg-light border-r-[8px] border-secondary drop-shadow-element",
+				"fixed top-0 left-0 z-[200] w-full h-[50px] border-r-[8px] drop-shadow-element border-b border-secondary bg-black/70 backdrop-blur",
 			)}
 		>
 			<div
