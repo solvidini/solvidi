@@ -15,7 +15,7 @@ export const Footer = () => {
 	const { dictionary: d } = useLocale()
 
 	return (
-		<footer className="relative flex flex-col mt-xxl w-full">
+		<footer className="relative flex flex-col mt-[52px] w-full">
 			<button
 				onClick={scrollToTop}
 				className="w-[36px] h-[36px] rotate-45 rounded-tl-md rounded-br-lg bg-primary absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
