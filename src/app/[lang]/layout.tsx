@@ -10,7 +10,7 @@ import { Locale, i18n } from "../../i18n-config"
 import { Drawer } from "./_components/Drawer"
 import { Footer } from "./_components/Footer"
 import { Toolbar } from "./_components/Toolbar"
-import "./globals.css"
+import "./global.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const barlow = Barlow({
@@ -28,7 +28,7 @@ export async function generateMetadata({
 
 	return {
 		title: "Solvidi",
-		description: d.about.description[0],
+		description: d.about.description,
 	}
 }
 

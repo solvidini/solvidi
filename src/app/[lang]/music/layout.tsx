@@ -7,7 +7,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
 
   return {
     title: `Solvidi - ${d.music.title}`,
-    description: d.music.description[0],
+    description: d.music.description,
   };
 }
 

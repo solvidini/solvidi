@@ -9,7 +9,7 @@ interface IAudioWaveProps {
 export const AudioWave: FC<IAudioWaveProps> = ({ className, amount = 10 }) => (
 	<div
 		className={twMerge(
-			"flex select-none pointer-events-none gap-[4px]",
+			"flex select-none gap-[4px]",
 			className,
 		)}
 	>
@@ -18,7 +18,7 @@ export const AudioWave: FC<IAudioWaveProps> = ({ className, amount = 10 }) => (
 			<div
 				key={`audio-wave-${index}`}
 				className={twMerge(
-					"w-[6px] h-[32px] bg-white rounded-md",
+					"w-[6px] h-[32px] hover:bg-highlight transition-colors rounded-md",
 					index % 4 === 0 && "animate-waveQuiet bg-tertiary",
 					index % 4 === 1 && "animate-waveNormal bg-teal-500",
 					index % 4 === 2 && "animate-waveLoud bg-secondary",

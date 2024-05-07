@@ -9,7 +9,7 @@ export const Button: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
 	<div
 		className={twMerge(
 			"relative",
-			"before:absolute before:rotate-x-180 before:bg-secondary before:hover:bg-tertiary before:transition-colors before:w-[110%] before:h-[120%] before:cp-button before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2",
+			"before:absolute before:rotate-x-180 before:bg-secondary before:hover:bg-highlight/80 before:transition-colors before:w-[110%] before:h-[120%] before:cp-button before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2",
 		)}
 	>
 		<button

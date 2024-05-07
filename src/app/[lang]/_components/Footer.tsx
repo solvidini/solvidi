@@ -22,7 +22,7 @@ export const Footer = () => {
 			>
 				<FaChevronUp
 					size={26}
-					className="animate-bounce -rotate-45 text-light hover:text-white transition-colors -mt-[7px] -ml-[7px]"
+					className="animate-bounce transition-colors -rotate-45 text-light hover:text-highlight -mt-[7px] -ml-[7px]"
 				/>
 			</button>
 
@@ -30,11 +30,15 @@ export const Footer = () => {
 			<div
 				className={twMerge(
 					"relative z-0 w-full bg-primary p-lg mx-auto flex flex-col md:flex-row items-center gap-xl",
-					"before:absolute before:top-0 before:left-0 before:h-[48px] before:w-[40px] before:bg-secondary before:cp-triangle",
+					"before:absolute before:top-0 before:left-0 before:h-[48px] before:w-[52px] before:bg-secondary before:cp-triangle",
 					"after:absolute after:bottom-0 after:right-0 after:h-full after:w-[8px] after:bg-secondary",
 				)}
 			>
-				<div className="flex-1 flex items-center justify-center space-x-4 text-blue-300">
+				<div
+					className={twMerge(
+						"relative flex-1 flex items-center justify-center space-x-4",
+					)}
+				>
 					{[
 						socialMedia.spotify,
 						socialMedia.linkedin,

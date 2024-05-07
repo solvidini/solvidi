@@ -6,8 +6,8 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
   const d = await fetchDictionary(lang);
 
   return {
-    title: `Solvidi - ${d.contact.title}`,
-    description: d.contact.description[0],
+    title: `Solvidi - ${d.featured.title}`,
+    description: d.featured.description,
   };
 }
 
