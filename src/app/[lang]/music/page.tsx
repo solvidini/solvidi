@@ -1,4 +1,5 @@
 import { socialMedia } from "@/_config"
+// import { AudioPlayer } from "@/app/_components/AudioPlayer/AudioPlayer"
 import { AudioWave } from "@/app/_components/AudioWave"
 import { Header } from "@/app/_components/Header"
 import { IconLink } from "@/app/_components/IconLink"
@@ -7,6 +8,7 @@ import { SongCard } from "@/app/_components/SongCard"
 import { Title } from "@/app/_components/Title"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
+// import { songs as TEST } from "../../../_data/music"
 import { playlists, songs } from "./_data"
 
 export default async function Music({
@@ -47,6 +49,7 @@ export default async function Music({
 				</section>
 				<Header className="m-md">{d.music.latest}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
+					{/* <AudioPlayer song={TEST[0]} /> */}
 					{songs.map(({ url }) => (
 						<SongCard
 							key={url}

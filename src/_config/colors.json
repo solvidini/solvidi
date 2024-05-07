@@ -34,7 +34,10 @@
 	"primary": {
 		"DEFAULT": "#007573"
 	},
-	"highlight": "#bf2271",
+	"highlight": {
+		"DEFAULT": "#bf2271",
+		"light": "#f73697"
+	},
 	"white": "#F1F1F1",
 	"black": "#101010",
 	"dark": "#212121",

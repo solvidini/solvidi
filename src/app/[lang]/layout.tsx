@@ -1,10 +1,9 @@
-import { Barlow, Inter } from "next/font/google"
-import { ReactNode } from "react"
-import { FaChevronUp } from "react-icons/fa"
-
 import { LocaleProvider } from "@/_contexts/locale-context"
 import { UIProvider } from "@/_contexts/ui-context"
 import { fetchDictionary } from "@/get-dictionary"
+import { Barlow, Inter } from "next/font/google"
+import { ReactNode } from "react"
+import { FaChevronUp } from "react-icons/fa"
 import { twMerge } from "tailwind-merge"
 import { Locale, i18n } from "../../i18n-config"
 import { Drawer } from "./_components/Drawer"

@@ -76,7 +76,7 @@ export const TechnologyMatrix: FC = () => {
 					))}
 				</div>
 			</div>
-			<div className="text-center text-sm text-gray-400">
+			<div className="text-center text-sm text-gray-500">
 				{d.common.more}...
 			</div>
 		</>
