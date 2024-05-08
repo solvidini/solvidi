@@ -57,11 +57,11 @@ async function updateTranslations(pathToUpdate, translations) {
 // }
 
 const translations = {
-  en: "Listen to the latest releases",
-  pl: "Posłuchaj ostatnich wydań",
-  pt: "Ouça os últimos lançamentos",
-  jp: "最新リリースを聴く",
+  en: "Preview",
+  pl: "Podgląd",
+  pt: "Pré-visualização",
+  jp: "プレビュー",
   empty: "",
 };
 
-updateTranslations("music.listen", translations)
+updateTranslations("music.preview", translations)

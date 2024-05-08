@@ -1,14 +1,14 @@
 import Image from "next/image"
 
+import { songs } from "@/_data/music"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
+import { AudioPlayer } from "../_components/AudioPlayer/AudioPlayer"
 import { ExternalLink } from "../_components/ExternalLink"
 import { Header } from "../_components/Header"
 import { LocaleLink } from "../_components/LocaleLink"
-import { SongCard } from "../_components/SongCard"
 import { HomeTitle } from "./_components/HomeTitle"
 import { projects } from "./featured/_data"
-import { songs } from "./music/_data"
 
 export default async function Home({
 	params: { lang },
@@ -23,14 +23,8 @@ export default async function Home({
 			<article className="w-full max-w-con px-lg">
 				<Header className="m-md">{d.music.listen}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
-					<SongCard
-						theme
-						link={songs[0].url}
-					/>
-					<SongCard
-						theme
-						link={songs[1].url}
-					/>
+					<AudioPlayer song={songs[0]} />
+					<AudioPlayer song={songs[1]} />
 				</div>
 				<div className="relatirve text-center p-md flex items-center justify-center">
 					<LocaleLink

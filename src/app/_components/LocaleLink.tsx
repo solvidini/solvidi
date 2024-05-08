@@ -1,6 +1,6 @@
 "use client"
 
-import { useLocale } from "@/_contexts/locale-context"
+import { useLocale } from "@/app/_contexts/locale-context"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FC, ReactNode } from "react"

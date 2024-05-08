@@ -1,5 +1,5 @@
-import { LocaleProvider } from "@/_contexts/locale-context"
-import { UIProvider } from "@/_contexts/ui-context"
+import { LocaleProvider } from "@/app/_contexts/locale-context"
+import { UIProvider } from "@/app/_contexts/ui-context"
 import { fetchDictionary } from "@/get-dictionary"
 import { Barlow, Inter } from "next/font/google"
 import { ReactNode } from "react"
@@ -28,6 +28,7 @@ export async function generateMetadata({
 	return {
 		title: "Solvidi",
 		description: d.about.description,
+		image: "/page-image.jpg",
 	}
 }
 

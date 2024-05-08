@@ -3,16 +3,17 @@ import { twMerge } from "tailwind-merge"
 
 interface ILoaderProps {
 	className?: string
+	svgClassName?: string
 }
 
-export const Loader: FC<ILoaderProps> = ({ className }) => (
+export const Loader: FC<ILoaderProps> = ({ className, svgClassName }) => (
 	<div
 		role="status"
 		className={twMerge("relative", className)}
 	>
 		<svg
 			aria-hidden="true"
-			className="w-[80px] h-[80px] text-primary/20 animate-spin fill-tertiary"
+			className={twMerge("w-[80px] h-[80px] text-primary/20 animate-spin fill-tertiary", svgClassName)}
 			viewBox="0 0 100 101"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

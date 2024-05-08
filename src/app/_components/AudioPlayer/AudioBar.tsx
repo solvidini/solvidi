@@ -1,10 +1,17 @@
 "use client"
 
-import { formatDuration } from "@/_utils"
 import { FC, useEffect, useRef, useState } from "react"
+import { twMerge } from "tailwind-merge"
 import { IAudioBarProps } from "./AudioPlayer.types"
 
-export const AudioBar: FC<IAudioBarProps> = ({ currentTime, duration, onClick }) => {
+export const AudioBar: FC<IAudioBarProps> = ({
+	currentTime,
+	duration,
+	length,
+	positionUpdate,
+	playSong,
+	pauseSong,
+}) => {
 	const barRef = useRef<HTMLDivElement | null>(null)
 	const songProgress = (currentTime / duration) * 100
 	const [isDragging, setIsDragging] = useState<boolean>(false)
@@ -13,6 +20,7 @@ export const AudioBar: FC<IAudioBarProps> = ({ currentTime, duration, onClick })
 		const handlePointerUp = () => {
 			if (isDragging) {
 				setIsDragging(false)
+				playSong()
 			}
 		}
 
@@ -23,9 +31,9 @@ export const AudioBar: FC<IAudioBarProps> = ({ currentTime, duration, onClick })
 			event.preventDefault()
 			const barRect = barRef.current.getBoundingClientRect()
 			const newPosition = (event.clientX - barRect.left) / barRect.width
-			const currentProgress = Math.min(1, Math.max(0, newPosition))
+			const songPosition = Math.min(1, Math.max(0, newPosition))
 
-			onClick(currentProgress)
+			positionUpdate(songPosition)
 		}
 
 		window.addEventListener("pointerup", handlePointerUp)
@@ -35,7 +43,7 @@ export const AudioBar: FC<IAudioBarProps> = ({ currentTime, duration, onClick })
 			window.removeEventListener("pointerup", handlePointerUp)
 			window.removeEventListener("pointermove", handlePointerMove)
 		}
-	}, [isDragging, onClick])
+	}, [isDragging])
 
 	const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
 		if (!barRef.current) {
@@ -44,24 +52,32 @@ export const AudioBar: FC<IAudioBarProps> = ({ currentTime, duration, onClick })
 		setIsDragging(true)
 		const width = barRef.current.clientWidth
 		const offset = event.nativeEvent.offsetX
-		const currentProgress = offset / width
+		const songPosition = offset / width
 
-		onClick(currentProgress)
+		pauseSong()
+		positionUpdate(songPosition)
 	}
 
 	return (
 		<div className="mt-auto flex items-end">
 			<div
 				ref={barRef}
-				className="relative w-full rounded-full h-[8px] bg-gray-900 cursor-pointer hover:bg-gray-600 transition-all"
+				className="relative w-full rounded-full h-[8px] bg-gray-900 cursor-pointer hover:bg-gray-600 transition-all group"
 				onPointerDown={handlePointerDown}
 			>
 				<div
 					className="absolute left-0 rounded-full h-[8px] bg-tertiary"
 					style={{ width: `${songProgress}%` }}
 				/>
+				<div
+					className={twMerge(
+						"group-hover:scale-[1] scale-0 absolute top-0 -mt-[2px] -ml-[6px] rounded-full w-[12px] h-[12px] bg-secondary transition-transform pointer-events-none",
+						isDragging && "scale-[1]",
+					)}
+					style={{ left: `${songProgress}%` }}
+				/>
 			</div>
-			<div className="text-sm text-gray-200 -mb-[6px] ml-sm">{formatDuration(duration)}</div>
+			<div className="text-sm text-gray-200 -mb-[6px] ml-sm">{length}</div>
 		</div>
 	)
 }

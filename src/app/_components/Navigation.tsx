@@ -3,9 +3,9 @@
 import { FC } from "react"
 
 import { navigation } from "@/_config/navigation"
-import { useLocale } from "@/_contexts/locale-context"
-import { useUI } from "@/_contexts/ui-context"
 import { LocaleLink } from "@/app/_components/LocaleLink"
+import { useLocale } from "@/app/_contexts/locale-context"
+import { useUI } from "@/app/_contexts/ui-context"
 
 interface INavigationProps {
 	isDrawer?: boolean

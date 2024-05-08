@@ -1,7 +1,7 @@
 "use client"
 
-import { useLocale } from "@/_contexts/locale-context"
-import { useUI } from "@/_contexts/ui-context"
+import { useLocale } from "@/app/_contexts/locale-context"
+import { useUI } from "@/app/_contexts/ui-context"
 import { SolvidiSVG } from "@/app/_svg/solvidi"
 import Link from "next/link"
 import { twMerge } from "tailwind-merge"

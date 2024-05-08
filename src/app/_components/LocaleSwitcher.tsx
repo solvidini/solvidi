@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FC } from "react"
 
-import { useLocale } from "@/_contexts/locale-context"
+import { useLocale } from "@/app/_contexts/locale-context"
 import { twMerge } from "tailwind-merge"
 import { Dropdown } from "./Dropdown"
 

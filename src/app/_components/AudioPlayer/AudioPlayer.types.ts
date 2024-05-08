@@ -7,6 +7,7 @@ export interface IAudioPlayerProps {
 
 export interface IAudioControlsProps {
 	isPlaying: boolean
+	isLoading: boolean
 	className?: string
 	togglePlay(): void
 }
@@ -14,10 +15,14 @@ export interface IAudioControlsProps {
 export interface IAudioBarProps {
 	currentTime: number
 	duration: number
-	onClick(time: number): void 
+	length: string
+	positionUpdate(time: number): void
+	playSong(): void
+	pauseSong(): void
 }
 
 export interface IAudioLinksProps {
 	soundCloud: string
 	spotify: string
+	className?: string
 }

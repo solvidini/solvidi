@@ -1,4 +1,4 @@
-import { Dictionary } from "@/_contexts/locale-context"
+import { Dictionary } from "@/app/_contexts/locale-context"
 
 interface INavigation {
 	title: keyof Dictionary["common"]

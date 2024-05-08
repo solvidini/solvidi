@@ -2,7 +2,7 @@
 
 import { FC, useState } from "react"
 
-import { useLocale } from "@/_contexts/locale-context"
+import { useLocale } from "@/app/_contexts/locale-context"
 import { twMerge } from "tailwind-merge"
 import { TechnologyType, technologies } from "../_data"
 import { Technology } from "./Technology"

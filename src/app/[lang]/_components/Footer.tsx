@@ -3,12 +3,12 @@
 import { FaChevronUp } from "react-icons/fa"
 
 import { socialMedia } from "@/_config"
-import { useLocale } from "@/_contexts/locale-context"
-import { getCurrentYear, scrollToTop } from "@/_utils"
 import { ExternalLink } from "@/app/_components/ExternalLink"
 import { IconLink } from "@/app/_components/IconLink"
 import { LocaleSwitcher } from "@/app/_components/LocaleSwitcher"
 import { Navigation } from "@/app/_components/Navigation"
+import { useLocale } from "@/app/_contexts/locale-context"
+import { getCurrentYear, scrollToTop } from "@/app/_utils"
 import { twMerge } from "tailwind-merge"
 
 export const Footer = () => {

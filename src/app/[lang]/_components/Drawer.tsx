@@ -1,6 +1,6 @@
 "use client"
 
-import { useUI } from "@/_contexts/ui-context"
+import { useUI } from "@/app/_contexts/ui-context"
 import { twMerge } from "tailwind-merge"
 import { Navigation } from "../../_components/Navigation"
 
