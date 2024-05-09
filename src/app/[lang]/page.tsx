@@ -24,7 +24,7 @@ export default async function Home({
 				<Header className="m-md">{d.music.listen}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
 					{songs.slice(0, 2).map((song) => (
-						<AudioPlayer song={song} />
+						<AudioPlayer key={song.id} song={song} />
 					))}
 				</div>
 				<div className="relatirve text-center p-md flex items-center justify-center">

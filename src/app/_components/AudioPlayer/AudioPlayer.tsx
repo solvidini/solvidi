@@ -42,20 +42,26 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 	}, [])
 
 	useEffect(() => {
-		audioRef.current?.addEventListener("ended", handleAudioEnd)
+		const audioElement = audioRef.current
+		if (!audioElement) {
+			return
+		}
+		audioElement.addEventListener("ended", handleAudioEnd)
 
 		return () => {
-			audioRef.current?.removeEventListener("ended", handleAudioEnd)
+			audioElement.removeEventListener("ended", handleAudioEnd)
 		}
-	}, [audioRef.current, handleAudioEnd])
+	}, [handleAudioEnd])
 
 	useEffect(() => {
 		setDuration(audioRef.current?.duration || reconvertDuration(song.length))
-	}, [audioRef.current])
+	}, [])
 
 	useEffect(() => {
 		if (isPlaying) {
-			setSong(song)
+			if (!currentSong || song.id !== currentSong.id) {
+				setSong(song)
+			}
 			audioRef.current?.play()
 		} else {
 			audioRef.current?.pause()

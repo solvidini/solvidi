@@ -50,7 +50,7 @@ export default async function Music({
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
 					{songs.map((song) => (
 						<AudioPlayer
-							key={song.title}
+							key={song.id}
 							song={song}
 						/>
 					))}
