@@ -59,7 +59,7 @@ export const AudioBar: FC<IAudioBarProps> = ({
 	}
 
 	return (
-		<div className="mt-auto flex items-end">
+		<div className="mt-auto flex items-end select-none">
 			<div
 				ref={barRef}
 				className="relative w-full rounded-full h-[8px] bg-gray-900 cursor-pointer hover:bg-gray-600 transition-all group"
@@ -77,7 +77,9 @@ export const AudioBar: FC<IAudioBarProps> = ({
 					style={{ left: `${songProgress}%` }}
 				/>
 			</div>
-			<div className="text-sm text-gray-200 -mb-[6px] ml-sm">{length}</div>
+			<div className="text-sm text-gray-200 -mb-[6px] ml-sm mr-[4px] sm:mr-0">
+				{length}
+			</div>
 		</div>
 	)
 }

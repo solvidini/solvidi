@@ -2,6 +2,7 @@ import { ISong } from "./data.types"
 
 export const songs: ISong[] = [
 	{
+		id: "cosmic-jackpot",
 		title: "Cosmic Jackpot (feat. Vinlovia)",
 		author: "Solvidi",
 		length: "3:29",
@@ -14,6 +15,7 @@ export const songs: ISong[] = [
 			"https://soundcloud.com/solvidi/cosmic-jackpot?si=40d2964c8975464cafb8b5c319d3da8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
 	},
 	{
+		id: "rise-within",
 		title: "Rise Within",
 		author: "Solvidi",
 		length: "4:01",
@@ -26,6 +28,7 @@ export const songs: ISong[] = [
 			"https://soundcloud.com/solvidi/rise-within?si=c7d4273f3d8645c59f0c953bf75d3ef2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
 	},
 	{
+		id: "transcendence",
 		title: "Transcendence",
 		author: "Solvidi",
 		length: "4:21",
@@ -38,6 +41,7 @@ export const songs: ISong[] = [
 			"https://soundcloud.com/solvidi/transcendence?si=7bebe75711da461da6b6a3f0e0f1d343&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
 	},
 	{
+		id: "crimson-sanctuary",
 		title: "Crimson Sanctuary",
 		author: "Solvidi",
 		length: "4:10",

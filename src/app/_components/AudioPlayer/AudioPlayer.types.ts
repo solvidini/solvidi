@@ -9,6 +9,7 @@ export interface IAudioControlsProps {
 	isPlaying: boolean
 	isLoading: boolean
 	className?: string
+	info?: string | false
 	togglePlay(): void
 }
 

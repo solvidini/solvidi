@@ -6,6 +6,7 @@ import { ReactNode } from "react"
 import { FaChevronUp } from "react-icons/fa"
 import { twMerge } from "tailwind-merge"
 import { Locale, i18n } from "../../i18n-config"
+import { MusicProvider } from "../_contexts/music-context"
 import { Drawer } from "./_components/Drawer"
 import { Footer } from "./_components/Footer"
 import { Toolbar } from "./_components/Toolbar"
@@ -61,12 +62,14 @@ export default function RootLayout({
 						/>
 					</div>
 					<LocaleProvider locale={lang}>
-						<UIProvider>
-							<Toolbar />
-							{children}
-							<Footer />
-							<Drawer />
-						</UIProvider>
+						<MusicProvider>
+							<UIProvider>
+								<Toolbar />
+								{children}
+								<Footer />
+								<Drawer />
+							</UIProvider>
+						</MusicProvider>
 					</LocaleProvider>
 				</div>
 			</body>

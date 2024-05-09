@@ -1,13 +1,14 @@
 import { socialMedia } from "@/_config"
+import { songs } from "@/_data/music"
+import { AudioPlayer } from "@/app/_components/AudioPlayer/AudioPlayer"
 import { AudioWave } from "@/app/_components/AudioWave"
 import { Header } from "@/app/_components/Header"
 import { IconLink } from "@/app/_components/IconLink"
 import { PlaylistCard } from "@/app/_components/PlaylistCard"
-import { SongCard } from "@/app/_components/SongCard"
 import { Title } from "@/app/_components/Title"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
-import { playlists, songs as spotifySongs } from "./_data"
+import { playlists } from "./_data"
 
 export default async function Music({
 	params: { lang },
@@ -47,19 +48,12 @@ export default async function Music({
 				</section>
 				<Header className="m-md">{d.music.latest}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
-					{spotifySongs.map(({ url }) => (
-						<SongCard
-							key={url}
-							link={url}
-							theme
-						/>
-					))}
-					{/* {songs.map((song) => (
+					{songs.map((song) => (
 						<AudioPlayer
 							key={song.title}
 							song={song}
 						/>
-					))} */}
+					))}
 				</div>
 				<Header className="m-md">{d.music.playlists}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">

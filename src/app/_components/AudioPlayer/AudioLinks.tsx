@@ -14,10 +14,10 @@ export const AudioLinks: FC<IAudioLinksProps> = ({
 	return (
 		<div className={twMerge("flex gap-sm", className)}>
 			<ExternalLink to={soundCloud}>
-				<FaSoundcloud className="w-[30px] h-[30px] text-light hover:text-highlight-light hover:scale-[1.2] transition-all" />
+				<FaSoundcloud className="w-[36px] h-[36px] sm:w-[30px] sm:h-[30px] text-light hover:text-highlight-light hover:scale-[1.2] transition-all" />
 			</ExternalLink>
 			<ExternalLink to={spotify}>
-				<FaSpotify className="w-[30px] h-[30px] text-light hover:text-highlight-light hover:scale-[1.2] transition-all" />
+				<FaSpotify className="w-[36px] h-[36px] sm:w-[30px] sm:h-[30px] text-light hover:text-highlight-light hover:scale-[1.2] transition-all" />
 			</ExternalLink>
 		</div>
 	)

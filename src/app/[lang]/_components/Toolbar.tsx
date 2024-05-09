@@ -27,11 +27,11 @@ export const Toolbar = () => {
 			<Link
 				className={twMerge(
 					"absolute left-0 top-0 bg-primary w-[100px] h-[82px] flex items-center justify-center",
-					"after:absolute after:left-full after:top-0 after:cp-triangle after:bg-primary after:w-[80px] after:h-[82px]",
+					"after:absolute after:left-full after:top-0 after:cp-triangle after:bg-primary after:w-[80px] after:h-[82px] after:-z-[1]",
 				)}
 				href={getLocaleUrl("/")}
 			>
-				<SolvidiSVG className="fade-in fill-white w-[90px] ml-sm" />
+				<SolvidiSVG className="fade-in fill-white w-[90px] ml-sm transition-transform hover:scale-[1.1]" />
 			</Link>
 			<div className="max-w-con-max h-full mx-auto pl-md pr-xs sm:pl-xl sm:pr-md flex items-center justify-between gap-lg">
 				<div className="hidden md:block fade-in ml-auto">
