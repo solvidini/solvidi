@@ -13,7 +13,10 @@ export const ExternalLink: FC<IExternalLinkProps> = ({
 	className,
 }) => (
 	<a
-		className={twMerge("transition-all duration-300 ease-in-out", className)}
+		className={twMerge(
+			"transition-all duration-300 ease-in-out outline-highlight-light",
+			className,
+		)}
 		href={to}
 		target="_blank"
 		rel="noopener noreferrer"

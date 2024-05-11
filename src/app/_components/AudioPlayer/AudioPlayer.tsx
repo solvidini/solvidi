@@ -1,19 +1,19 @@
 "use client"
-import Image from "next/image"
 
 import { useLocale } from "@/app/_contexts/locale-context"
 import { useMusic } from "@/app/_contexts/music-context"
 import { reconvertDuration } from "@/app/_utils"
 import { FC, useCallback, useEffect, useRef, useState } from "react"
 import { twMerge } from "tailwind-merge"
-import { AudioBar } from "./AudioBar"
-import { AudioControls } from "./AudioControls"
-import { AudioLinks } from "./AudioLinks"
 import { IAudioPlayerProps } from "./AudioPlayer.types"
+import { AudioBar } from "./_components/AudioBar"
+import { AudioControls } from "./_components/AudioControls"
+import { AudioImage } from "./_components/AudioImage"
+import { AudioLinks } from "./_components/AudioLinks"
 
 export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
-	const { currentSong, setSong } = useMusic()
 	const { dictionary: d } = useLocale()
+	const { contextSong, setContextSong } = useMusic()
 	const audioRef = useRef<HTMLAudioElement | null>(null)
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 	const [isPlaying, setIsPlaying] = useState<boolean>(false)
@@ -41,6 +41,18 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 		setIsPlaying(false)
 	}, [])
 
+	const play = () => {
+		setIsPlaying(true)
+	}
+
+	const pause = () => {
+		setIsPlaying(false)
+	}
+
+	const togglePlay = () => {
+		setIsPlaying(!isPlaying)
+	}
+
 	useEffect(() => {
 		const audioElement = audioRef.current
 		if (!audioElement) {
@@ -59,8 +71,8 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 
 	useEffect(() => {
 		if (isPlaying) {
-			if (!currentSong || song.id !== currentSong.id) {
-				setSong(song)
+			if (!contextSong || song.id !== contextSong.id) {
+				setContextSong(song)
 			}
 			audioRef.current?.play()
 		} else {
@@ -69,37 +81,23 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 	}, [isPlaying])
 
 	useEffect(() => {
-		if (currentSong && currentSong.id !== song.id) {
+		if (contextSong && contextSong.id !== song.id) {
 			setIsPlaying(false)
 		}
-	}, [currentSong])
-
-	const play = () => {
-		setIsPlaying(true)
-	}
-
-	const pause = () => {
-		setIsPlaying(false)
-	}
-
-	const togglePlay = () => {
-		setIsPlaying(!isPlaying)
-	}
+	}, [contextSong])
 
 	return (
 		<div
 			className={twMerge(
-				"relative w-full bg-black/70 border border-secondary rounded-md backdrop-blur p-md grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-md",
+				"relative w-full bg-black/60 border border-secondary rounded-md backdrop-blur p-md grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-sm sm:gap-md",
 				className,
 			)}
 		>
-			<Image
-				className="select-none my-auto w-[120px] h-[120px] rounded-md transition-all hover:scale-[1.1] hover:brightness-[1.2] cursor-pointer"
+			<AudioImage
+				isPlaying={isPlaying}
 				src={song.imageSrc}
 				alt={song.title}
 				onClick={togglePlay}
-				width={120}
-				height={120}
 			/>
 			<div className="flex flex-col">
 				<div className="flex justify-between items-start flex-row gap-sm">

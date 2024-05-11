@@ -28,7 +28,7 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 		<Link
 			onClick={onClick}
 			className={twMerge(
-				"text-sm leading-[1.6rem] transition-colors",
+				"text-sm leading-[1.6rem] transition-colors outline-highlight-light",
 				pathname === getLocaleUrl(to)
 					? "text-white underline underline-offset-4 decoration-tertiary"
 					: "text-light",

@@ -1,17 +1,11 @@
 "use client"
 
 import { ISong } from "@/_data/music"
-import {
-  FC,
-  ReactNode,
-  createContext,
-  useContext,
-  useState
-} from "react"
+import { FC, ReactNode, createContext, useContext, useState } from "react"
 
 interface MusicContextProps {
-  currentSong: ISong | null
-	setSong(song: ISong | null): void
+	contextSong: ISong | null
+	setContextSong(song: ISong | null): void
 }
 
 export const MusicContext = createContext<MusicContextProps | undefined>(
@@ -29,15 +23,15 @@ export const useMusic = (): MusicContextProps => {
 }
 
 export const MusicProvider: FC<{ children: ReactNode }> = ({ children }) => {
-  const [currentSong, setCurrentSong] = useState<ISong | null>(null)
+	const [contextSong, setcontextSong] = useState<ISong | null>(null)
 
-	const setSong = (song: ISong | null) => {
-		setCurrentSong(song)
+	const setContextSong = (song: ISong | null) => {
+		setcontextSong(song)
 	}
 
 	const contextValue: MusicContextProps = {
-    currentSong,
-		setSong
+		contextSong,
+		setContextSong,
 	}
 
 	return (

@@ -1,14 +1,13 @@
 import { socialMedia } from "@/_config"
-import { songs } from "@/_data/music"
+import { playlists, songs } from "@/_data/music"
 import { AudioPlayer } from "@/app/_components/AudioPlayer/AudioPlayer"
+import { AudioPlaylist } from "@/app/_components/AudioPlayer/AudioPlaylist"
 import { AudioWave } from "@/app/_components/AudioWave"
 import { Header } from "@/app/_components/Header"
 import { IconLink } from "@/app/_components/IconLink"
-import { PlaylistCard } from "@/app/_components/PlaylistCard"
 import { Title } from "@/app/_components/Title"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
-import { playlists } from "./_data"
 
 export default async function Music({
 	params: { lang },
@@ -48,7 +47,7 @@ export default async function Music({
 				</section>
 				<Header className="m-md">{d.music.latest}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
-					{songs.map((song) => (
+					{songs.slice(0, 4).map((song) => (
 						<AudioPlayer
 							key={song.id}
 							song={song}
@@ -57,11 +56,10 @@ export default async function Music({
 				</div>
 				<Header className="m-md">{d.music.playlists}</Header>
 				<div className="w-full mx-auto flex flex-col items-center justify-center gap-md">
-					{playlists.map(({ url }) => (
-						<PlaylistCard
-							key={url}
-							theme
-							link={url}
+					{playlists.map((playlist) => (
+						<AudioPlaylist
+							key={playlist.id}
+							{...playlist}
 						/>
 					))}
 				</div>

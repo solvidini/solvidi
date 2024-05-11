@@ -16,7 +16,7 @@ export const Button: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
 			type="button"
 			{...props}
 			className={twMerge(
-				"flex items-center justify-center gap-2 min-w-[140px] w-full px-4 py-2 text-sm font-medium bg-black cp-button",
+				"flex items-center justify-center gap-2 min-w-[140px] w-full px-4 py-2 text-sm font-medium bg-black cp-button outline-highlight-light",
 				className,
 			)}
 		>
