@@ -1,60 +1,60 @@
 {
-  "common": {
-    "home": "Strona główna",
-    "about": "O mnie",
-    "music": "Muzyka",
-    "it": "IT",
-    "featured": "Wyróżnione",
-    "contact": "Kontakt",
-    "buy_now": "Kup teraz",
-    "download": "Pobierz",
-    "cookies": "Ta strona internetowa zawiera zewnętrzne treści z platform takich jak Spotify i SoundCloud, które mogą używać plików cookie. Korzystając z tej strony internetowej, akceptujesz i wyrażasz zgodę na korzystanie z plików cookie przez te usługi stron trzecich.",
-    "more": "I więcej",
-    "discover_more": "Odkryj więcej",
-    "go_to": "Przejdź do strony"
-  },
-  "home": {
-    "welcome": "Witaj w świecie kreatywności!",
-    "quote": "\"Marzenia są nasionami przyszłości. Pielęgnuj je, wierz w nie, i obserwuj, jak kwitną w rzeczywistość.\"",
-    "magical_world": "Zobacz magiczny świat"
-  },
-  "about": {
-    "title": "O mnie",
-    "description": [
-      "Jestem Samuel, entuzjasta kreatywności z pasją do tworzenia różnorodnej muzyki, eksplorowania sztuki w jej różnych formach oraz podejmowania się nowych kreatywnych wyzwań. 🎵 Od komponowania wzruszających melodii po eksplorację głębi wyrazu artystycznego, 🎨 pochłaniam się w każdym przedsięwzięciu z prawdziwym oddaniem. Oprócz artystycznych dążeń, zagłębiam się w świat programowania, mając na celu połączenie technologii z kreatywnością, aby innowować i inspirować. 💻 💡 Z niezłomnym zaangażowaniem w doskonałość, ciągle ewoluuję i rozwijam się w mojej kreatywnej podróży."
-    ]
-  },
-  "music": {
-    "title": "Muzyka",
-    "description": [
-      "🎵 Wkrocz do mojego muzycznego świata, gdzie innowacja i różnorodność kształtują każdy dźwięk. 🌟 Od eksperymentalnych odchyleń po alternatywne wibracje, spokojne instrumentale, bity hip-hopowe i eteryczną trans muzykę elektroniczną, moje kompozycje przemierzają rozległy krajobraz dźwięków. 🎶 Z każdą nutą, mój cel jest jasny: szerzenie uważności i radości zarówno poprzez dźwięk, jak i teksty, tworząc immersyjne doświadczenie, które rezonuje głęboko z duszą. 🌿 Dołącz do mnie w tej pełnej przygód dźwiękowej odysei. 🎹"
-    ],
-    "latest": "Najnowsze wydania",
-    "playlists": "Listy odtwarzania",
-    "listen": "Posłuchaj ostatnich wydań",
-    "preview": "Podgląd"
-  },
-  "it": {
-    "title": "IT",
-    "description": [
-      "🚀 Jako doświadczony Frontend Developer, posiadam niezachwianą pasję do programowania i dążę do ciągłego poszerzania mojej wiedzy i umiejętności. Pozostaję głęboko zaabsorbowany najnowszymi trendami kształtującymi obszar tworzenia stron internetowych, aplikacji internetowych, blogów i gier. 💻 Moja specjalizacja leży w tworzeniu płynnych doświadczeń użytkownika poprzez szczegółowe uwzględnienie detali UI i UX, zapewniając optymalną wydajność na wszystkich urządzeniach. 🎨 Oprócz specjalizacji w JavaScript i innych nowoczesnych technologiach front-endowych, również poświęcam się doskonaleniu mojej wiedzy w technologiach serwerowych. 🔧"
-    ],
-    "skills": {
-      "title": "Technologie, których używam",
-      "other": "Inne"
-    }
-  },
-  "featured": {
-    "title": "Wyróżnione",
-    "description": [
-      "🌟 Odkryj wyróżnione projekty - przegląd moich twórczych przedsięwzięć i innowacyjnych współprac. Zagłęb się i zobacz różnorodny zakres pracy wykonanej z pasją i oddaniem."
-    ]
-  },
-  "contact": {
-    "title": "Kontakt",
-    "description": [
-      "Nie krępuj się do mnie zwrócić w sprawie współpracy, zapytań lub po prostu, aby przywitać się pod adresem:",
-      "Zawsze jestem podekscytowany, aby nawiązać kontakt z innymi twórcami i entuzjastami. Rozpocznijmy rozmowę!"
-    ]
-  }
+	"common": {
+		"home": "Strona główna",
+		"about": "O mnie",
+		"music": "Muzyka",
+		"it": "IT",
+		"featured": "Wyróżnione",
+		"contact": "Kontakt",
+		"buy_now": "Kup teraz",
+		"download": "Pobierz",
+		"cookies": "Ta strona internetowa zawiera zewnętrzne treści z platform takich jak Spotify i SoundCloud, które mogą używać plików cookie. Korzystając z tej strony internetowej, akceptujesz i wyrażasz zgodę na korzystanie z plików cookie przez te usługi stron trzecich.",
+		"more": "I więcej",
+		"discover_more": "Odkryj więcej",
+		"go_to": "Przejdź do strony"
+	},
+	"home": {
+		"welcome": "Witaj w świecie kreatywności!",
+		"quote": "\"Marzenia są nasionami przyszłości. Pielęgnuj je, wierz w nie, i obserwuj, jak kwitną w rzeczywistość.\"",
+		"magical_world": "Zobacz magiczny świat"
+	},
+	"about": {
+		"title": "O mnie",
+		"description": [
+			"Jestem Samuel—kreatywna dusza napędzana głęboką pasją do różnorodnej muzyki i sztuki dźwiękowego uzdrawiania. 🎵 Od tworzenia eksperymentalnych, alternatywnych, światowych i elektronicznych kompozycji, 🎧 wkładam szczere poświęcenie w każde przedsięwzięcie. Oprócz moich muzycznych zainteresowań, zagłębiam się w programowanie, starając się łączyć technologię z kreatywnością, by wywoływać innowacje i inspiracje. 💻 💡 Z niewzruszonym zobowiązaniem do doskonałości, podążam ciągle w dążeniu do rozwoju i ewolucji. Dołącz do mnie, gdy przemierzam nieustannie poszerzające się horyzonty kreatywności! ✨"
+		]
+	},
+	"music": {
+		"title": "Muzyka",
+		"description": [
+			"🎵 Wkrocz do mojego muzycznego świata, gdzie innowacja i różnorodność kształtują każdy dźwięk. 🌟 Od eksperymentalnych odchyleń po alternatywne wibracje, spokojne instrumentale, bity hip-hopowe i eteryczną trans muzykę elektroniczną, moje kompozycje przemierzają rozległy krajobraz dźwięków. 🎶 Z każdą nutą, mój cel jest jasny: szerzenie uważności i radości zarówno poprzez dźwięk, jak i teksty, tworząc immersyjne doświadczenie, które rezonuje głęboko z duszą. 🌿 Dołącz do mnie w tej pełnej przygód dźwiękowej odysei. 🎹"
+		],
+		"latest": "Najnowsze wydania",
+		"playlists": "Listy odtwarzania",
+		"listen": "Posłuchaj ostatnich wydań",
+		"preview": "Podgląd"
+	},
+	"it": {
+		"title": "IT",
+		"description": [
+			"🚀 Jako doświadczony Frontend Developer, posiadam niezachwianą pasję do programowania i dążę do ciągłego poszerzania mojej wiedzy i umiejętności. Pozostaję głęboko zaabsorbowany najnowszymi trendami kształtującymi obszar tworzenia stron internetowych, aplikacji internetowych, blogów i gier. 💻 Moja specjalizacja leży w tworzeniu płynnych doświadczeń użytkownika poprzez szczegółowe uwzględnienie detali UI i UX, zapewniając optymalną wydajność na wszystkich urządzeniach. 🎨 Oprócz specjalizacji w JavaScript i innych nowoczesnych technologiach front-endowych, również poświęcam się doskonaleniu mojej wiedzy w technologiach serwerowych. 🔧"
+		],
+		"skills": {
+			"title": "Technologie, których używam",
+			"other": "Inne"
+		}
+	},
+	"featured": {
+		"title": "Wyróżnione",
+		"description": [
+			"🌟 Odkryj wyróżnione projekty - przegląd moich twórczych przedsięwzięć i innowacyjnych współprac. Zagłęb się i zobacz różnorodny zakres pracy wykonanej z pasją i oddaniem."
+		]
+	},
+	"contact": {
+		"title": "Kontakt",
+		"description": [
+			"Nie krępuj się do mnie zwrócić w sprawie współpracy, zapytań lub po prostu, aby przywitać się pod adresem:",
+			"Zawsze jestem podekscytowany, aby nawiązać kontakt z innymi twórcami i entuzjastami. Rozpocznijmy rozmowę!"
+		]
+	}
 }

@@ -1,60 +1,60 @@
 {
-  "common": {
-    "home": "Início",
-    "about": "Sobre",
-    "music": "Música",
-    "it": "TI",
-    "featured": "Destaque",
-    "contact": "Contato",
-    "buy_now": "Comprar Agora",
-    "download": "Baixar",
-    "cookies": "Este site incorpora conteúdo externo de plataformas como Spotify e SoundCloud, que podem utilizar cookies. Ao usar este site, você reconhece e consente com o uso de cookies por esses serviços de terceiros.",
-    "more": "E mais",
-    "discover_more": "Descubra mais",
-    "go_to": "Ir para a página"
-  },
-  "home": {
-    "welcome": "Bem-vindo ao mundo da criatividade!",
-    "quote": "\"Os sonhos são as sementes do futuro. Cultive-os, acredite neles e observe-os florescer na realidade.\"",
-    "magical_world": "Explore o mundo mágico"
-  },
-  "about": {
-    "title": "Sobre Mim",
-    "description": [
-      "Sou Samuel, um entusiasta criativo com paixão por criar música diversificada, explorar arte em suas várias formas e aventurar-se em novos territórios criativos. 🎵 Desde a composição de melodias emocionantes até a exploração das profundezas da expressão artística, 🎨 mergulho em cada empreendimento com dedicação genuína. Além de minhas aspirações artísticas, mergulho no mundo da programação, com o objetivo de fundir tecnologia com criatividade para inovar e inspirar. 💻 💡 Com um compromisso inabalável com a excelência, continuo a evoluir e crescer em minha jornada criativa."
-    ]
-  },
-  "music": {
-    "title": "Música",
-    "description": [
-      "🎵 Adentre meu universo musical, onde inovação e diversidade moldam cada som. 🌟 De reviravoltas experimentais a vibrações alternativas, serenidade instrumental, batidas de rap e o etéreo trance da música eletrônica, minhas composições percorrem uma vasta paisagem sonora. 🎶 Com cada nota, meu objetivo é claro: espalhar mindfulness e alegria através do som e das letras, criando uma experiência imersiva que ressoa profundamente com a alma. 🌿 Junte-se a mim nesta odisseia sonora cheia de aventuras. 🎹"
-    ],
-    "latest": "Últimos lançamentos",
-    "playlists": "Listas de reprodução",
-    "listen": "Ouça os últimos lançamentos",
-    "preview": "Pré-visualização"
-  },
-  "it": {
-    "title": "TI",
-    "description": [
-      "🚀 Como um desenvolvedor frontend experiente, possuo uma paixão inabalável pela programação e busco expandir continuamente meu conhecimento e habilidades. Permaneço profundamente envolvido nas últimas tendências que moldam o universo do desenvolvimento de sites, aplicativos web, blogs e jogos. 💻 Minha expertise reside em proporcionar experiências de usuário perfeitas, abordando meticulosamente os detalhes de UI e UX, garantindo desempenho ideal em todos os dispositivos. 🎨 Enquanto me especializo em JavaScript e outras tecnologias front-end de ponta, também me dedico a aprimorar minha proficiência em tecnologias de servidor. 🔧"
-    ],
-    "skills": {
-      "title": "Tecnologias que utilizo",
-      "other": "Outros"
-    }
-  },
-  "featured": {
-    "title": "Destaque",
-    "description": [
-      "🌟 Descubra projetos em destaque - uma mostra de meus empreendimentos criativos e colaborações inovadoras. Explore e mergulhe na diversidade de trabalhos feitos com paixão e dedicação."
-    ]
-  },
-  "contact": {
-    "title": "Contato",
-    "description": [
-      "Sinta-se à vontade para entrar em contato comigo para colaborações, consultas ou apenas para dizer olá em:",
-      "Estou sempre empolgado para me conectar com outros criativos e entusiastas. Vamos começar uma conversa!"
-    ]
-  }
+	"common": {
+		"home": "Início",
+		"about": "Sobre",
+		"music": "Música",
+		"it": "TI",
+		"featured": "Destaque",
+		"contact": "Contato",
+		"buy_now": "Comprar Agora",
+		"download": "Baixar",
+		"cookies": "Este site incorpora conteúdo externo de plataformas como Spotify e SoundCloud, que podem utilizar cookies. Ao usar este site, você reconhece e consente com o uso de cookies por esses serviços de terceiros.",
+		"more": "E mais",
+		"discover_more": "Descubra mais",
+		"go_to": "Ir para a página"
+	},
+	"home": {
+		"welcome": "Bem-vindo ao mundo da criatividade!",
+		"quote": "\"Os sonhos são as sementes do futuro. Cultive-os, acredite neles e observe-os florescer na realidade.\"",
+		"magical_world": "Explore o mundo mágico"
+	},
+	"about": {
+		"title": "Sobre Mim",
+		"description": [
+			"Eu sou Samuel—uma alma criativa impulsionada por uma paixão profunda pela música diversa e pela arte da cura sonora. 🎵 Da criação de composições experimentais, alternativas, mundiais e eletrônicas, 🎧 dedico-me genuinamente a cada empreendimento. Além dos meus interesses musicais, mergulho na programação, buscando mesclar tecnologia com criatividade para despertar inovação e inspiração. 💻 💡 Com um compromisso inabalável com a excelência, estou em uma jornada contínua de crescimento e evolução. Junte-se a mim enquanto eu navego pelos horizontes em constante expansão da criatividade! ✨"
+		]
+	},
+	"music": {
+		"title": "Música",
+		"description": [
+			"🎵 Adentre meu universo musical, onde inovação e diversidade moldam cada som. 🌟 De reviravoltas experimentais a vibrações alternativas, serenidade instrumental, batidas de rap e o etéreo trance da música eletrônica, minhas composições percorrem uma vasta paisagem sonora. 🎶 Com cada nota, meu objetivo é claro: espalhar mindfulness e alegria através do som e das letras, criando uma experiência imersiva que ressoa profundamente com a alma. 🌿 Junte-se a mim nesta odisseia sonora cheia de aventuras. 🎹"
+		],
+		"latest": "Últimos lançamentos",
+		"playlists": "Listas de reprodução",
+		"listen": "Ouça os últimos lançamentos",
+		"preview": "Pré-visualização"
+	},
+	"it": {
+		"title": "TI",
+		"description": [
+			"🚀 Como um desenvolvedor frontend experiente, possuo uma paixão inabalável pela programação e busco expandir continuamente meu conhecimento e habilidades. Permaneço profundamente envolvido nas últimas tendências que moldam o universo do desenvolvimento de sites, aplicativos web, blogs e jogos. 💻 Minha expertise reside em proporcionar experiências de usuário perfeitas, abordando meticulosamente os detalhes de UI e UX, garantindo desempenho ideal em todos os dispositivos. 🎨 Enquanto me especializo em JavaScript e outras tecnologias front-end de ponta, também me dedico a aprimorar minha proficiência em tecnologias de servidor. 🔧"
+		],
+		"skills": {
+			"title": "Tecnologias que utilizo",
+			"other": "Outros"
+		}
+	},
+	"featured": {
+		"title": "Destaque",
+		"description": [
+			"🌟 Descubra projetos em destaque - uma mostra de meus empreendimentos criativos e colaborações inovadoras. Explore e mergulhe na diversidade de trabalhos feitos com paixão e dedicação."
+		]
+	},
+	"contact": {
+		"title": "Contato",
+		"description": [
+			"Sinta-se à vontade para entrar em contato comigo para colaborações, consultas ou apenas para dizer olá em:",
+			"Estou sempre empolgado para me conectar com outros criativos e entusiastas. Vamos começar uma conversa!"
+		]
+	}
 }

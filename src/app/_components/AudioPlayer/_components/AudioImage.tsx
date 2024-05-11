@@ -26,10 +26,10 @@ export const AudioImage: FC<IAudioImageProps> = ({
 				height={120}
 			/>
 			{!isPlaying && (
-				<BsPlayFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60px] h-[60px] opacity-1 pointer-events-none scale-0 group-hover/image:scale-[1] transition-transform" />
+				<BsPlayFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60px] h-[60px] opacity-1 pointer-events-none scale-0 group-hover/image:scale-[1] transition-transform drop-shadow-element" />
 			)}
 			{isPlaying && (
-				<BsPauseFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60px] h-[60px] opacity-1 pointer-events-none scale-0 group-hover/image:scale-[1] transition-transform" />
+				<BsPauseFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60px] h-[60px] opacity-1 pointer-events-none scale-0 group-hover/image:scale-[1] transition-transform drop-shadow-element" />
 			)}
 		</div>
 	)

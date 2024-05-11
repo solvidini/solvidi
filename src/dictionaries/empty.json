@@ -1,60 +1,49 @@
 {
-  "common": {
-    "home": "",
-    "about": "",
-    "music": "",
-    "it": "",
-    "featured": "",
-    "contact": "",
-    "buy_now": "",
-    "download": "",
-    "cookies": "",
-    "more": "",
-    "discover_more": "",
-    "go_to": ""
-  },
-  "home": {
-    "welcome": "",
-    "quote": "",
-    "magical_world": ""
-  },
-  "about": {
-    "title": "",
-    "description": [
-      ""
-    ]
-  },
-  "music": {
-    "title": "",
-    "description": [
-      ""
-    ],
-    "latest": "",
-    "playlists": "",
-    "listen": "",
-    "preview": ""
-  },
-  "it": {
-    "title": "",
-    "description": [
-      ""
-    ],
-    "skills": {
-      "title": "",
-      "other": ""
-    }
-  },
-  "featured": {
-    "title": "",
-    "description": [
-      ""
-    ]
-  },
-  "contact": {
-    "title": "",
-    "description": [
-      "",
-      ""
-    ]
-  }
+	"common": {
+		"home": "",
+		"about": "",
+		"music": "",
+		"it": "",
+		"featured": "",
+		"contact": "",
+		"buy_now": "",
+		"download": "",
+		"cookies": "",
+		"more": "",
+		"discover_more": "",
+		"go_to": ""
+	},
+	"home": {
+		"welcome": "",
+		"quote": "",
+		"magical_world": ""
+	},
+	"about": {
+		"title": "",
+		"description": [""]
+	},
+	"music": {
+		"title": "",
+		"description": [""],
+		"latest": "",
+		"playlists": "",
+		"listen": "",
+		"preview": ""
+	},
+	"it": {
+		"title": "",
+		"description": [""],
+		"skills": {
+			"title": "",
+			"other": ""
+		}
+	},
+	"featured": {
+		"title": "",
+		"description": [""]
+	},
+	"contact": {
+		"title": "",
+		"description": ["", ""]
+	}
 }
