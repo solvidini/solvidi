@@ -5,7 +5,7 @@ import { FC, ReactNode, createContext, useContext, useState } from "react"
 
 interface MusicContextProps {
 	contextSong: ISong | null
-	setContextSong(song: ISong | null): void
+	changeContextSong(song: ISong | null): void
 }
 
 export const MusicContext = createContext<MusicContextProps | undefined>(
@@ -23,15 +23,15 @@ export const useMusic = (): MusicContextProps => {
 }
 
 export const MusicProvider: FC<{ children: ReactNode }> = ({ children }) => {
-	const [contextSong, setcontextSong] = useState<ISong | null>(null)
+	const [contextSong, setContextSong] = useState<ISong | null>(null)
 
-	const setContextSong = (song: ISong | null) => {
-		setcontextSong(song)
+	const changeContextSong = (song: ISong | null) => {
+		setContextSong(song)
 	}
 
 	const contextValue: MusicContextProps = {
 		contextSong,
-		setContextSong,
+		changeContextSong,
 	}
 
 	return (

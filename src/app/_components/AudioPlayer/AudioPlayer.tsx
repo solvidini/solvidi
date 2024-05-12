@@ -3,7 +3,7 @@
 import { useLocale } from "@/app/_contexts/locale-context"
 import { useMusic } from "@/app/_contexts/music-context"
 import { reconvertDuration } from "@/app/_utils"
-import { FC, useCallback, useEffect, useRef, useState } from "react"
+import { FC, useEffect, useRef, useState } from "react"
 import { twMerge } from "tailwind-merge"
 import { IAudioPlayerProps } from "./AudioPlayer.types"
 import { AudioBar } from "./_components/AudioBar"
@@ -13,32 +13,49 @@ import { AudioLinks } from "./_components/AudioLinks"
 
 export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 	const { dictionary: d } = useLocale()
-	const { contextSong, setContextSong } = useMusic()
+	const { contextSong, changeContextSong } = useMusic()
 	const audioRef = useRef<HTMLAudioElement | null>(null)
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 	const [isPlaying, setIsPlaying] = useState<boolean>(false)
 	const [duration, setDuration] = useState<number>(0)
 	const [currentTime, setCurrentTime] = useState<number>(0)
 
-	const handleTimeUpdate = () => {
-		if (!audioRef.current) {
-			return
+	useEffect(() => {
+		const handleTimeUpdate = () => {
+			if (!audioRef.current) {
+				return
+			}
+			const time = parseFloat(audioRef.current.currentTime.toFixed(2))
+			setCurrentTime(time)
 		}
-		const time = parseFloat(audioRef.current.currentTime.toFixed(2))
 
-		setCurrentTime(time)
-	}
-
-	const changeSongTimePosition = (position: number) => {
-		if (!audioRef.current) {
-			return
+		const handleAudioEnd = () => {
+			setCurrentTime(0)
+			setIsPlaying(false)
 		}
-		audioRef.current.currentTime = position * duration
-	}
 
-	const handleAudioEnd = useCallback(() => {
-		setCurrentTime(0)
-		setIsPlaying(false)
+		const handleLoadStart = () => {
+			setIsLoading(true)
+		}
+
+		const handleLoadedMetadata = () => {
+			setIsLoading(false)
+		}
+
+		audioRef.current?.addEventListener("timeupdate", handleTimeUpdate)
+		audioRef.current?.addEventListener("ended", handleAudioEnd)
+		audioRef.current?.addEventListener("loadstart", handleLoadStart)
+		audioRef.current?.addEventListener("loadedmetadata", handleLoadedMetadata)
+
+		return () => {
+			audioRef.current?.removeEventListener("timeupdate", handleTimeUpdate)
+			audioRef.current?.removeEventListener("ended", handleAudioEnd)
+			audioRef.current?.removeEventListener("loadstart", handleLoadStart)
+			audioRef.current?.removeEventListener(
+				"loadedmetadata",
+				handleLoadedMetadata,
+			)
+		}
 	}, [])
 
 	const play = () => {
@@ -53,26 +70,17 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 		setIsPlaying(!isPlaying)
 	}
 
-	useEffect(() => {
-		const audioElement = audioRef.current
-		if (!audioElement) {
+	const changeSongTimePosition = (position: number) => {
+		if (!audioRef.current) {
 			return
 		}
-		audioElement.addEventListener("ended", handleAudioEnd)
-
-		return () => {
-			audioElement.removeEventListener("ended", handleAudioEnd)
-		}
-	}, [handleAudioEnd])
-
-	useEffect(() => {
-		setDuration(audioRef.current?.duration || reconvertDuration(song.length))
-	}, [])
+		audioRef.current.currentTime = position * duration
+	}
 
 	useEffect(() => {
 		if (isPlaying) {
 			if (!contextSong || song.id !== contextSong.id) {
-				setContextSong(song)
+				changeContextSong(song)
 			}
 			audioRef.current?.play()
 		} else {
@@ -85,6 +93,10 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 			setIsPlaying(false)
 		}
 	}, [contextSong])
+
+	useEffect(() => {
+		setDuration(reconvertDuration(song.length))
+	}, [])
 
 	return (
 		<div
@@ -131,9 +143,6 @@ export const AudioPlayer: FC<IAudioPlayerProps> = ({ song, className }) => {
 				ref={audioRef}
 				src={song.songSrc}
 				preload="metadata"
-				onTimeUpdate={handleTimeUpdate}
-				onLoadStart={() => setIsLoading(true)}
-				onLoadedMetadata={() => setIsLoading(false)}
 			/>
 		</div>
 	)
