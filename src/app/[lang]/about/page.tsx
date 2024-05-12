@@ -16,7 +16,7 @@ export default async function About({
 			<Title>{d.about.title}</Title>
 			<article className="relative w-full max-w-con-min px-lg flex flex-col items-center justify-center gap-lg">
 				<Image
-					className="transition-all z-10 ease-in-out duration-300 hover:scale-105 hover:brightness-105 rounded-full border-l-[6px] border-primary hover:border-highlight"
+					className="transition-all z-10 ease-in-out duration-300 hover:scale-105 hover:brightness-105 rounded-full border-l-[6px] border-secondary hover:border-highlight"
 					src="/solvidi.jpeg"
 					alt="Solvidi"
 					width={300}
