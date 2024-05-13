@@ -2,6 +2,20 @@ import { ISong, PlaylistID } from "./music.types"
 
 export const songs: ISong[] = [
 	{
+		id: "zen-realm",
+		playlistId: PlaylistID.SeishinDreams,
+		title: "Zen Realm",
+		author: "Solvidi",
+		length: "3:01",
+		preview: true,
+		imageSrc: "/music/images/zen-realm.jpeg",
+		songSrc: "/music/songs/zen-realm.mp3",
+		spotify:
+			"https://open.spotify.com/track/2r9RlYMriHigLqpLkvOKhY?si=583b9ead0d994e80",
+		soundcloud:
+			"https://soundcloud.com/solvidi/zen-realm?si=0109f788385244e9b9346173625c81fa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+	},
+	{
 		id: "cosmic-jackpot",
 		playlistId: PlaylistID.AvantGarde,
 		title: "Cosmic Jackpot (feat. Vinlovia)",
