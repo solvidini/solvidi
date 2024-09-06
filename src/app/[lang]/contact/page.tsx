@@ -24,9 +24,9 @@ export default async function Contact({
 						<p className="text-left mr-2">{d.contact.description[0]}</p>
 						<ExternalLink
 							className="text-tertiary hover:text-highlight inline-flex items-center"
-							to="mailto:contact@solvidi.pro"
+							to="mailto:samuel.zenso@gmail.com"
 						>
-							<FaEnvelope className="mr-1" /> contact@solvidi.pro
+							<FaEnvelope className="mr-1" /> samuel.zenso@gmail.com
 						</ExternalLink>
 					</div>
 					<p className="text-left xs:text-center">

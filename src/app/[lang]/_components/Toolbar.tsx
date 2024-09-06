@@ -31,7 +31,7 @@ export const Toolbar = () => {
 				)}
 				href={getLocaleUrl("/")}
 			>
-				<SolvidiSVG className="fade-in fill-white w-[90px] max-h-full ml-sm transition-transform hover:scale-[1.1]" />
+				<SolvidiSVG className="fade-in fill-white w-[90px] max-h-full ml-sm transition-transform hover:scale-[1.05]" />
 			</Link>
 			<div className="max-w-con-max h-full mx-auto pl-md pr-xs sm:pl-xl sm:pr-md flex items-center justify-between gap-lg">
 				<div className="hidden md:block fade-in ml-auto">
