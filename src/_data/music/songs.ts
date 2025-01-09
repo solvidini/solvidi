@@ -2,6 +2,20 @@ import { ISong, PlaylistID } from "./music.types"
 
 export const songs: ISong[] = [
 	{
+		id: "shamandiri",
+		playlistId: PlaylistID.AvantGarde,
+		title: "Shamandiri",
+		author: "Solvidi",
+		length: "5:29",
+		preview: false,
+		imageSrc: "/music/images/shamandiri.jpeg",
+		songSrc: "/music/songs/shamandiri.mp3",
+		spotify:
+			"https://open.spotify.com/track/6v4QeMypKNQqCUDnGYa9eR?si=8dc1ccd1689842a0",
+		soundcloud:
+			"https://soundcloud.com/solvidi/shamandiri?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+	},
+	{
 		id: "whispers-of-salvation",
 		playlistId: PlaylistID.TranceFusion,
 		title: "Whispers of Salvation",
@@ -10,7 +24,8 @@ export const songs: ISong[] = [
 		preview: false,
 		imageSrc: "/music/images/whispers-of-salvation.jpeg",
 		songSrc: "/music/songs/whispers-of-salvation.mp3",
-		spotify: "https://open.spotify.com/track/4vQWBiauAORjoTvYrjjiFv?si=4a3360332d69499e",
+		spotify:
+			"https://open.spotify.com/track/4vQWBiauAORjoTvYrjjiFv?si=4a3360332d69499e",
 		soundcloud:
 			"https://soundcloud.com/solvidi/whispers-of-salvation?si=40b01325b39349078d703e082c1d7e09&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
 	},
